@@ -1,0 +1,25 @@
+{
+  "name": "dolittle.interaction.javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "node bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dolittle-interaction/JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dolittle-interaction/JavaScript/issues"
+  },
+  "homepage": "https://github.com/dolittle-interaction/JavaScript#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "webpack-cli": "^2.0.9"
+  }
+}
