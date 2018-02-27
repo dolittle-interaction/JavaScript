@@ -23,7 +23,7 @@ doLittle.namespace("doLittle.commands", {
                 commands: commandRequests
             };
 
-            var url = "/doLittle/CommandCoordinator/HandleMany";
+            var url = "/api/Dolittle/Commands/HandleMany";
 
             server.post(url, parameters).continueWith(function (results) {
                 var commandResults = [];

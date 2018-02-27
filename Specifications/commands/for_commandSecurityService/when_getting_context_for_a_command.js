@@ -18,7 +18,7 @@ describe("when getting context for a command", sinon.test(function () {
 
     var server = sinon.fakeServer.create();
 
-    server.respondWith("GET", "/doLittle/CommandSecurity/GetForCommand?commandName=SomeCommand",
+    server.respondWith("GET", "/api/Dolittle/CommandSecurity/commandName=SomeCommand",
         [
             200,
             { "Content-Type": "application/json" },

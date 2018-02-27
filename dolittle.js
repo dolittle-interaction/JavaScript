@@ -708,7 +708,7 @@ doLittle.namespace("doLittle",{
         initialize: function () {
             var promise = doLittle.execution.Promise.create();
             if (!doLittle.assetsManager.isInitialized()) {
-                $.get("/doLittle/AssetsManager", { extension: "js" }, function (result) {
+                $.get("/api/Dolittle/Assets", { extension: "js" }, function (result) {
                     doLittle.assetsManager.initializeFromAssets(result);
                     promise.signal();
                 }, "json");
@@ -3981,7 +3981,7 @@ doLittle.namespace("doLittle.commands", {
                 command: commandRequest
             };
 
-            var url = "/doLittle/CommandCoordinator/Handle?_cmd=" + encodeURIComponent(command._commandType);
+            var url = "/api/Dolittle/Commands?_cmd=" + encodeURIComponent(command._commandType);
 
             server.post(url, parameters).continueWith(function (result) {
                 var commandResult = doLittle.commands.CommandResult.createFrom(result);
@@ -4031,7 +4031,7 @@ doLittle.namespace("doLittle.commands", {
                 commands: commandRequests
             };
 
-            var url = "/doLittle/CommandCoordinator/HandleMany";
+            var url = "/api/Dolittle/Commands/HandleMany";
 
             server.post(url, parameters).continueWith(function (results) {
                 var commandResults = [];
@@ -4736,7 +4736,7 @@ doLittle.namespace("doLittle.commands", {
                 if (doLittle.isNullOrUndefined(command._generatedFrom) || command._generatedFrom === "") {
                     promise.signal(context);
                 } else {
-                    var url = "/doLittle/CommandSecurity/GetForCommand?commandName=" + command._generatedFrom;
+                    var url = "/api/Dolittle/CommandSecurity?commandName=" + command._generatedFrom;
                     $.getJSON(url, function (e) {
                         context.isAuthorized(e.isAuthorized);
                         promise.signal(context);
@@ -5878,7 +5878,7 @@ doLittle.dependencyResolvers.query = {
 };
 doLittle.namespace("doLittle.read", {
     QueryTask: doLittle.tasks.LoadTask.extend(function (query, paging, taskFactory) {
-        var url = "/doLittle/Query/Execute?_q=" + query._generatedFrom;
+        var url = "/doLittle/Queries?_q=" + query._generatedFrom;
         var payload = {
             descriptor: {
                 nameOfQuery: query._name,

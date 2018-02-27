@@ -39,7 +39,7 @@ doLittle.namespace("doLittle.commands", {
                 if (doLittle.isNullOrUndefined(command._generatedFrom) || command._generatedFrom === "") {
                     promise.signal(context);
                 } else {
-                    var url = "/doLittle/CommandSecurity/GetForCommand?commandName=" + command._generatedFrom;
+                    var url = "/api/Dolittle/CommandSecurity?commandName=" + command._generatedFrom;
                     $.getJSON(url, function (e) {
                         context.isAuthorized(e.isAuthorized);
                         promise.signal(context);

@@ -32,7 +32,7 @@ describe("when creating", function () {
         paging: paging
     });
 
-    var expectedUrl = "/doLittle/Query/Execute?_q=" + query._generatedFrom;
+    var expectedUrl = "/doLittle/Queries?_q=" + query._generatedFrom;
 
     it("should create an inner task with correct url", function () {
         expect(urlForTask).toBe(expectedUrl);

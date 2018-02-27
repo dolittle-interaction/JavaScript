@@ -7,7 +7,7 @@ doLittle.namespace("doLittle",{
         initialize: function () {
             var promise = doLittle.execution.Promise.create();
             if (!doLittle.assetsManager.isInitialized()) {
-                $.get("/doLittle/AssetsManager", { extension: "js" }, function (result) {
+                $.get("/api/Dolittle/Assets", { extension: "js" }, function (result) {
                     doLittle.assetsManager.initializeFromAssets(result);
                     promise.signal();
                 }, "json");
