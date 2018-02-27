@@ -2,4 +2,5 @@
 Source
 Specifications
 yarn.lock
+bundle.js
 webpack*
