@@ -5833,7 +5833,7 @@ doLittle.namespace("doLittle.read", {
 });
 doLittle.namespace("doLittle.read", {
     ReadModelTask: doLittle.tasks.LoadTask.extend(function (readModelOf, propertyFilters, taskFactory) {
-        var url = "/doLittle/ReadModel/InstanceMatching?_rm=" + readModelOf._generatedFrom;
+        var url = "/api/Dolittle/ReadModel?_rm=" + readModelOf._generatedFrom;
         var payload = {
             descriptor: {
                 readModel: readModelOf._name,
@@ -5878,7 +5878,7 @@ doLittle.dependencyResolvers.query = {
 };
 doLittle.namespace("doLittle.read", {
     QueryTask: doLittle.tasks.LoadTask.extend(function (query, paging, taskFactory) {
-        var url = "/doLittle/Queries?_q=" + query._generatedFrom;
+        var url = "/api/Dolittle/Queries?_q=" + query._generatedFrom;
         var payload = {
             descriptor: {
                 nameOfQuery: query._name,
