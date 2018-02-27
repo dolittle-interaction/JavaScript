@@ -19,7 +19,6 @@
   "homepage": "https://github.com/dolittle-interaction/JavaScript#readme",
   "dependencies": {},
   "devDependencies": {
-    "concat": "^1.0.3",
-    "webpack-cli": "^2.0.9"
+    "concat": "^1.0.3"
   }
 }
