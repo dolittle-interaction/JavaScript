@@ -1,4 +1,4 @@
-﻿describe("when getting an empty guid", function () {
+describe("when getting an empty guid", function () {
     var emptyGuid = doLittle.Guid.empty;
 
     it("should be an ampty guid", function () {

@@ -1,4 +1,4 @@
-﻿describe("when child region becomes busy", function () {
+describe("when child region becomes busy", function () {
 
     var tasks = {
         all: ko.observableArray()

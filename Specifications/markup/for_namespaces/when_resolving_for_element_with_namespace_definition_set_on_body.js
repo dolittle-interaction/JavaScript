@@ -1,4 +1,4 @@
-﻿describe("when resolving for element with namespace definition set on body", given("a namespaces instance", function () {
+describe("when resolving for element with namespace definition set on body", given("a namespaces instance", function () {
     var context = this;
     var prefix = "controls";
     var name = "mycontrol";

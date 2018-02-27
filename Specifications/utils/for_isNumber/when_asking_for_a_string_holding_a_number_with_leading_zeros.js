@@ -1,4 +1,4 @@
-﻿describe("when asking for a string holding a number with leading zeros", function () {
+describe("when asking for a string holding a number with leading zeros", function () {
 
     var result = doLittle.isNumber("0001");
 

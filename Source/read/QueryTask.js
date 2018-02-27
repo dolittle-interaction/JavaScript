@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     QueryTask: doLittle.tasks.LoadTask.extend(function (query, paging, taskFactory) {
         var url = "/doLittle/Query/Execute?_q=" + query._generatedFrom;
         var payload = {

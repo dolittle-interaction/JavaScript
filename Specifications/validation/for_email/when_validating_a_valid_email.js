@@ -1,4 +1,4 @@
-﻿describe("when validating a valid email", function () {
+describe("when validating a valid email", function () {
 
     var validator = doLittle.validation.email.create({ options: {} });
     var result = validator.validate("something@somewhere.com");

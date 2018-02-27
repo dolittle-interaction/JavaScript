@@ -1,4 +1,4 @@
-﻿describe("when resolving an empty string", function () {
+describe("when resolving an empty string", function () {
     var stringMappingFactory = {
         create: function (format, mappedFormat) {
             function StringMapping(format, mappedFormat) {

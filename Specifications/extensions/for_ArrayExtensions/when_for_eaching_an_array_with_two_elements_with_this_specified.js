@@ -1,4 +1,4 @@
-﻿describe("when for eaching an array with two elements with this specified", function () {
+describe("when for eaching an array with two elements with this specified", function () {
 
     var originalForEach;
     var expected = ["hello", "world"];

@@ -1,4 +1,4 @@
-﻿describe("when mapping with a simple to strategy and target is observable", function () {
+describe("when mapping with a simple to strategy and target is observable", function () {
     var propertyMap = doLittle.mapping.PropertyMap.create({
         sourceProperty: "sourceProperty",
         typeConverters: {}

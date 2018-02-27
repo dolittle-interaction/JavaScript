@@ -1,4 +1,4 @@
-﻿describe("when getting local name on element without namespace reference", given("an element naming instance", function () {
+describe("when getting local name on element without namespace reference", given("an element naming instance", function () {
     var context = this;
     var result = null;
 

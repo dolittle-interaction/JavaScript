@@ -1,4 +1,4 @@
-﻿describe("when observing global messenger with a default value", function () {
+describe("when observing global messenger with a default value", function () {
     var observable = null;
     beforeEach(function () {
         doLittle.messaging = doLittle.messaging || {};

@@ -1,4 +1,4 @@
-﻿describe("when extending properties without validation", function () {
+describe("when extending properties without validation", function () {
     var command = {
         something: ko.observable(),
         deep: {

@@ -1,4 +1,4 @@
-﻿describe("when generating guid", function () {
+describe("when generating guid", function () {
     var result = doLittle.Guid.create();
 
     it("should return something", function () {

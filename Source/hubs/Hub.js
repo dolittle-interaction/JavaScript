@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.hubs", {
+doLittle.namespace("doLittle.hubs", {
     Hub: doLittle.Type.extend(function (hubConnection) {
         var self = this;
 

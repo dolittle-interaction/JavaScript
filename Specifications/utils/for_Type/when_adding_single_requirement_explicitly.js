@@ -1,4 +1,4 @@
-﻿describe("when adding single requirement explicitly", function () {
+describe("when adding single requirement explicitly", function () {
     doLittle.dependencyResolver.getDependenciesFor = function () {
         return [];
     };

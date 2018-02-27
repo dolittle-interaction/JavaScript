@@ -1,4 +1,4 @@
-﻿describe("when asking type not extending beyond type if it is of a type", function () {
+describe("when asking type not extending beyond type if it is of a type", function () {
 
     var a = doLittle.Type.extend(function () { });
     var b = doLittle.Type.extend(function () { });

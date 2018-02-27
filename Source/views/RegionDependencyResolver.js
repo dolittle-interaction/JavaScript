@@ -1,4 +1,4 @@
-﻿doLittle.dependencyResolvers.Region = {
+doLittle.dependencyResolvers.Region = {
     canResolve: function (namespace, name) {
         return name === "region";
     },

@@ -1,4 +1,4 @@
-﻿describe("when execution is complete", function () {
+describe("when execution is complete", function () {
     var items = [
         { firstItem: 1 },
         { secondItem: 2 }

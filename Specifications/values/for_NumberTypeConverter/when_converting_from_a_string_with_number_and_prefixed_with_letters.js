@@ -1,4 +1,4 @@
-﻿describe("when converting from a string with number and prefixed with letters", function () {
+describe("when converting from a string with number and prefixed with letters", function () {
 
     var converter = doLittle.values.NumberTypeConverter.create();
 

@@ -1,4 +1,4 @@
-﻿describe("when asking type extending an extended type if it is of top level type", function () {
+describe("when asking type extending an extended type if it is of top level type", function () {
 
     var a = doLittle.Type.extend(function () { });
     var b = a.extend(function () { });

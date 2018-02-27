@@ -1,4 +1,4 @@
-﻿describe("when getting by identifier and it does not exist", function () {
+describe("when getting by identifier and it does not exist", function () {
     var firstOperation = {
         identifier: "A03989FF-A2A1-40CE-94CE-EF5F34D1ADCF"
     };

@@ -1,4 +1,4 @@
-﻿describe("when aggreating commands and child region has one command but is command root", function () {
+describe("when aggreating commands and child region has one command but is command root", function () {
 
     var tasks = {
         all: ko.observableArray()

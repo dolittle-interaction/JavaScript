@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     valueConsumers: doLittle.Singleton(function () {
 
         this.getFor = function (instance, propertyName) {

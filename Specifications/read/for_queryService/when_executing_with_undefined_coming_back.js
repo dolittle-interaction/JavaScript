@@ -1,4 +1,4 @@
-﻿describe("when executing with undefined coming back", function() {
+describe("when executing with undefined coming back", function() {
     var task = {
         some: "task"
     };

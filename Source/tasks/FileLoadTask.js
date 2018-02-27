@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     FileLoadTask: doLittle.tasks.LoadTask.extend(function (files, fileManager) {
         /// <summary>Represents a task for loading view related files asynchronously</summary>
         this.files = files;

@@ -1,4 +1,4 @@
-﻿describe("when setting container and no mapping for url", function () {
+describe("when setting container and no mapping for url", function () {
     var container = $("<div/>")[0];
     var uriMapper = {
         resolve: function (input) {

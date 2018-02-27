@@ -1,4 +1,4 @@
-﻿describe("when populated externally with property values set", function () {
+describe("when populated externally with property values set", function () {
     var parameters = {
         commandCoordinator: {
         },

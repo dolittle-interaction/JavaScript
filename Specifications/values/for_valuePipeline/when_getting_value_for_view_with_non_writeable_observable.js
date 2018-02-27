@@ -1,4 +1,4 @@
-﻿describe("when getting value for view with non writeable observable", function () {
+describe("when getting value for view with non writeable observable", function () {
     var typeConverters = {
         convertTo: sinon.stub()
     };

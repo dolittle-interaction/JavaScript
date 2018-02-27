@@ -1,4 +1,4 @@
-﻿describe("when executing without success", function () {
+describe("when executing without success", function () {
     var errorCommandResultReceived = null;
     var completeCommandResultReceived = null;
     var continueWithCallback = null;

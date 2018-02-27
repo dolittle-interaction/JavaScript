@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.commands");
+doLittle.namespace("doLittle.commands");
 doLittle.commands.CommandRequest = function(command) {
     var self = this;
 

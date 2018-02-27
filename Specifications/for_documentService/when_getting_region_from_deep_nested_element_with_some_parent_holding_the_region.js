@@ -1,4 +1,4 @@
-﻿describe("when getting region from deep nested element with some parent holding the region", function () {
+describe("when getting region from deep nested element with some parent holding the region", function () {
     var service = doLittle.documentService.createWithoutScope({
         DOMRoot: {}
     });

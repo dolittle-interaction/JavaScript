@@ -1,4 +1,4 @@
-﻿describe("when asking if can map property with two properties and last property matches", function () {
+describe("when asking if can map property with two properties and last property matches", function () {
     var propertyMapType = null;
     var result = null;
     beforeEach(function () {

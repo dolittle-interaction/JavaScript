@@ -1,4 +1,4 @@
-﻿describe("when value to be validated is not a string", function () {
+describe("when value to be validated is not a string", function () {
     var exception = null;
     try {
         var validator = doLittle.validation.minLength.create({ options: { length: 3 } })

@@ -1,4 +1,4 @@
-﻿describe("when resolving and resolver can resolve", function () {
+describe("when resolving and resolver can resolve", function () {
     var resolveCalled = false;
     var systemReceived = null;
     var system = { blah: "something" };

@@ -1,4 +1,4 @@
-﻿describe("when child region gets changes", function () {
+describe("when child region gets changes", function () {
 
     var tasks = {
         all: ko.observableArray()

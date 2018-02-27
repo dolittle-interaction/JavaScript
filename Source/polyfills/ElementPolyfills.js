@@ -1,4 +1,4 @@
-﻿// From: http://www.jonathantneal.com/blog/faking-the-future/
+// From: http://www.jonathantneal.com/blog/faking-the-future/
 this.Element && (function (ElementPrototype, polyfill) {
     function NodeList() { [polyfill] }
     NodeList.prototype.length = Array.prototype.length;

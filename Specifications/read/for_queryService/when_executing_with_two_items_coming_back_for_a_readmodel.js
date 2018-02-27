@@ -1,4 +1,4 @@
-﻿describe("when executing with two items coming back for a read model", function() {
+describe("when executing with two items coming back for a read model", function() {
     var task = {
         some: "task"
     };

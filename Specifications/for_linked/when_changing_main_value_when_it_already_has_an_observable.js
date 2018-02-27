@@ -1,4 +1,4 @@
-﻿describe("when changing main value when it already has an observable", function () {
+describe("when changing main value when it already has an observable", function () {
     var actualValue = ko.observable("42");
     var subscription = { dispose: sinon.stub() };
     actualValue.subscribe = sinon.stub().returns(subscription);

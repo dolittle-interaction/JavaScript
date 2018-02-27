@@ -1,4 +1,4 @@
-﻿describe("when matching with property filters with observables that change after initial setup", function () {
+describe("when matching with property filters with observables that change after initial setup", function () {
     var propertyFilters = { some: ko.observable("filter") };
     var task = { some: "task" };
     var taskFactory = {

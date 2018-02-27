@@ -1,4 +1,4 @@
-﻿describe("when triggering event with two subscribers", function () {
+describe("when triggering event with two subscribers", function () {
 
     var event = doLittle.Event.create();
 

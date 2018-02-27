@@ -1,4 +1,4 @@
-﻿describe("when creating", function () {
+describe("when creating", function () {
     var commandAskedForSecurityContext = null;
 
     var securityContext = "SecurityContext";

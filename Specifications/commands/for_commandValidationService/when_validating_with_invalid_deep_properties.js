@@ -1,4 +1,4 @@
-﻿describe("when validating with invalid deep properties", function () {
+describe("when validating with invalid deep properties", function () {
     var command = {
         name: "something",
         something: ko.observable(),

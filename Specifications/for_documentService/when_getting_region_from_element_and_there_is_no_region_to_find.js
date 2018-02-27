@@ -1,4 +1,4 @@
-﻿describe("when getting region from element and there is no region to find", function () {
+describe("when getting region from element and there is no region to find", function () {
     var service = doLittle.documentService.createWithoutScope({
         DOMRoot: {}
     });

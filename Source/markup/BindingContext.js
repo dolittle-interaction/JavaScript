@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     BindingContext: doLittle.Type.extend(function () {
         this.parent = null;
         this.current = null;

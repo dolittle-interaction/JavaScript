@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     namespaceDefinitions: doLittle.Singleton(function () {
 
         this.create = function (prefix) {

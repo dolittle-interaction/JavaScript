@@ -1,4 +1,4 @@
-﻿describe("when changing extension with path path prefixed with dots and no extension on original", function () {
+describe("when changing extension with path path prefixed with dots and no extension on original", function () {
 
     var newFile = doLittle.Path.changeExtension("../Something/cool/file", "js");
 

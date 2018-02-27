@@ -1,4 +1,4 @@
-﻿describe("when validating with zero integer", function () {
+describe("when validating with zero integer", function () {
     var validator = doLittle.validation.required.create({ options: {} });
     var result = validator.validate(0);
 

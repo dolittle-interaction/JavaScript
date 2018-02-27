@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     bindingContextManager: doLittle.Singleton(function () {
 
         this.ensure = function (element) {

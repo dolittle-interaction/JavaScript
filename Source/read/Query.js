@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     Query: doLittle.Type.extend(function (queryableFactory, region) {
         var self = this;
         this.target = this;

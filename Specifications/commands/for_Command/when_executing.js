@@ -1,4 +1,4 @@
-﻿describe("when executing", function () {
+describe("when executing", function () {
     var commandHandled = null;
     var validatedCommand = null;
     var commandResultReceived = null;

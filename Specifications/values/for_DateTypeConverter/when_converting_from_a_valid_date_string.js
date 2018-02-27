@@ -1,4 +1,4 @@
-﻿describe("when converting from a valid date string", function () {
+describe("when converting from a valid date string", function () {
 
     var converter = doLittle.values.DateTypeConverter.create();
     var result = converter.convertFrom("2014/2/27");

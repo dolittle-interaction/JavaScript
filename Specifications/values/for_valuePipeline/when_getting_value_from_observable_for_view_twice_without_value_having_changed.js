@@ -1,4 +1,4 @@
-﻿describe("when getting value from observable for view twice without value having changed", function () {
+describe("when getting value from observable for view twice without value having changed", function () {
     var typeConverters = {
         convertTo: sinon.stub()
     };

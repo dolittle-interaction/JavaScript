@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.io", {
+doLittle.namespace("doLittle.io", {
     fileFactory: doLittle.Singleton(function () {
         /// <summary>Represents a factory for creating instances of doLittle.io.File</summary>
         this.create = function (path, fileType) {

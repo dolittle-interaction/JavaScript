@@ -1,4 +1,4 @@
-﻿describe("when converting from empty string", function () {
+describe("when converting from empty string", function () {
 
     var converter = doLittle.values.NumberTypeConverter.create();
 

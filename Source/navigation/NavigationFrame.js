@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.navigation", {
+doLittle.namespace("doLittle.navigation", {
     NavigationFrame: doLittle.Type.extend(function (home, uriMapper, history) {
         var self = this;
 

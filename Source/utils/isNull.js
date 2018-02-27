@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     isNull: function (value) {
         return value === null;
     }

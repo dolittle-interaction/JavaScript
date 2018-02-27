@@ -1,4 +1,4 @@
-﻿describe("when asking if url is absolute and it is relative prefixed with slash", function () {
+describe("when asking if url is absolute and it is relative prefixed with slash", function () {
 
     var result = doLittle.Uri.isAbsolute("/example/url");
 

@@ -1,4 +1,4 @@
-﻿describe("when asking for all mappings and no mappings have been registered", function () {
+describe("when asking for all mappings and no mappings have been registered", function () {
     var mapper = doLittle.StringMapper.create({
         stringMappingFactory: {}
     });

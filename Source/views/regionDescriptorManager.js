@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     regionDescriptorManager: doLittle.Singleton(function () {
         /// <summary>Represents a manager that knows how to manage region descriptors</summary>
 

@@ -1,4 +1,4 @@
-﻿describe("when observing message and value changes on the observable", function () {
+describe("when observing message and value changes on the observable", function () {
 
     var messagePublished = null;
     var observable = null;

@@ -1,4 +1,4 @@
-﻿describe("when all properties are set and they already was", function () {
+describe("when all properties are set and they already was", function () {
     var query = {
         foo: ko.observable(1),
         areAllParametersSet: ko.observable(true)

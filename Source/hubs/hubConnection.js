@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.hubs", {
+doLittle.namespace("doLittle.hubs", {
     hubConnection: doLittle.Singleton(function () {
         var self = this;
         var hub = $.hubConnection("/signalr", { useDefaultPath: false });

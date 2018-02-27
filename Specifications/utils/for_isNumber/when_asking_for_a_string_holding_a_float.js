@@ -1,4 +1,4 @@
-﻿describe("when asking for a string holding a float", function () {
+describe("when asking for a string holding a float", function () {
 
     var result = doLittle.isNumber("1.1");
 

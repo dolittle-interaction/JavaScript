@@ -1,4 +1,4 @@
-﻿describe("when applying to properties", function () {
+describe("when applying to properties", function () {
     it("should add a validator to all property instances", function () {
         var itemWithProperties = {
             first: {},

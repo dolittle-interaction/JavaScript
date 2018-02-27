@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.mapping", {
+doLittle.namespace("doLittle.mapping", {
     MissingPropertyStrategy: doLittle.Type.extend(function () {
 
     })

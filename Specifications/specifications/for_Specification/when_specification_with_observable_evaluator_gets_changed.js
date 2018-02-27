@@ -1,4 +1,4 @@
-﻿describe("when specification with observable evaluator gets changed", function () {
+describe("when specification with observable evaluator gets changed", function () {
 
     var evaluator = ko.observable(false);
     var rule = doLittle.specifications.Specification.create();

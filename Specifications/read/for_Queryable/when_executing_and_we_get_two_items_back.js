@@ -1,4 +1,4 @@
-﻿describe("when executing and we get two items back", function () {
+describe("when executing and we get two items back", function () {
     var items = [
         { firstItem: 1 },
         { secondItem: 2 }

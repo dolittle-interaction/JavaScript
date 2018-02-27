@@ -1,4 +1,4 @@
-﻿describe("when expanding namespaces on element with two namespaces", given("a namespaces instance", function () {
+describe("when expanding namespaces on element with two namespaces", given("a namespaces instance", function () {
     var context = this;
 
     var firstPrefix = "first";

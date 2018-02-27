@@ -1,4 +1,4 @@
-﻿describe("when asking if undefined is object", function () {
+describe("when asking if undefined is object", function () {
 
     var result = doLittle.isObject(undefined);
 

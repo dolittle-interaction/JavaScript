@@ -1,4 +1,4 @@
-﻿describe("when asking if it can resolve for comamndTypes", sinon.test(function () {
+describe("when asking if it can resolve for comamndTypes", sinon.test(function () {
 
     var resolver,
         canResolve,

@@ -1,4 +1,4 @@
-﻿describe("when getting stateful operations with one operation with state and one without", function () {
+describe("when getting stateful operations with one operation with state and one without", function () {
     var context = {
         someContext: 42
     };

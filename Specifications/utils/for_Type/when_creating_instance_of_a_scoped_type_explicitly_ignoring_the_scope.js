@@ -1,4 +1,4 @@
-﻿describe("when creating instance of a scoped type explicitly ignoring the scope", function () {
+describe("when creating instance of a scoped type explicitly ignoring the scope", function () {
     var existingGetDependenciesFor = null;
     var firstInstance = 41;
     var secondInstance = 42;

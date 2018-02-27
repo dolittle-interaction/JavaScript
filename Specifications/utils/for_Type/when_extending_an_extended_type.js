@@ -1,4 +1,4 @@
-﻿describe("when extending an extended type", function () {
+describe("when extending an extended type", function () {
     var initialType = function (anInitialType) { };
     var extendedType = null;
     var aSecondExtendedType = null;

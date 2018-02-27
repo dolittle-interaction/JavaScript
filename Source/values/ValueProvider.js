@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     ValueProvider: doLittle.Type.extend(function () {
 
         this.defaultProperty = null;

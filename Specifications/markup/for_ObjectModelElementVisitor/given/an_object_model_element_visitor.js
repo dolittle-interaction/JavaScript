@@ -1,4 +1,4 @@
-﻿given("an object model element visitor", function () {
+given("an object model element visitor", function () {
     this.element_naming = {
         getLocalNameFor: sinon.stub()
     };

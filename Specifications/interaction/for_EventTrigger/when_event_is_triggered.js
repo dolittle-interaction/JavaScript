@@ -1,4 +1,4 @@
-﻿describe("when event is triggered", function () {
+describe("when event is triggered", function () {
     var element = $("<button/>");
     var trigger = doLittle.interaction.EventTrigger.create();
     trigger.eventName = "click";

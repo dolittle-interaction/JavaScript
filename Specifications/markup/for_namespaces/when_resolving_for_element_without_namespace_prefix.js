@@ -1,4 +1,4 @@
-﻿describe("when resolving for element without namespace prefix", given("a namespaces instance", function () {
+describe("when resolving for element without namespace prefix", given("a namespaces instance", function () {
     var context = this;
     var result;
 

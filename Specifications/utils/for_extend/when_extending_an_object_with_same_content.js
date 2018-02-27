@@ -1,4 +1,4 @@
-﻿
+
 describe("when extending an object with same content", function () {
     var contentObject = {
         property: "",

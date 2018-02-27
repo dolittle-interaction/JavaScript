@@ -1,4 +1,4 @@
-﻿describe("when creating from command", function () {
+describe("when creating from command", function () {
     var command = {
         _name: "DoSomething",
         _generatedFrom: "Somewhere",

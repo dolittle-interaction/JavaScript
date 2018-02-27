@@ -1,4 +1,4 @@
-﻿describe("when extended observable value changes", function () {
+describe("when extended observable value changes", function () {
     var extender = doLittle.values.typeExtender.createWithoutScope();
 
     var observable = ko.observable();

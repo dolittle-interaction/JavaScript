@@ -1,4 +1,4 @@
-﻿describe("when validating with string with content", function () {
+describe("when validating with string with content", function () {
     var validator = doLittle.validation.required.create({ options: {} });
     var result = validator.validate("something");
 

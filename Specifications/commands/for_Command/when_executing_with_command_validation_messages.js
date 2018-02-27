@@ -1,4 +1,4 @@
-﻿describe("when executing with command validation messages", function () {
+describe("when executing with command validation messages", function () {
     var commandCoordinatorHandleCalled = false;
     var validationResults = [];
     var commandValidationMessages = [{},{}];

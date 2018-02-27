@@ -1,4 +1,4 @@
-﻿describe("when replacing many instances of a char with new char", function () {
+describe("when replacing many instances of a char with new char", function () {
 
     result = "something_with_many_underscores".replaceAll("_", " ");
 

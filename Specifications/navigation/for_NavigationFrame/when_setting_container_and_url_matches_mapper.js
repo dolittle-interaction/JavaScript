@@ -1,4 +1,4 @@
-﻿describe("when setting container and url matches mapper", function () {
+describe("when setting container and url matches mapper", function () {
     var container = $("<div/>")[0];
     var uriMapper = {
         resolve: function (input) {

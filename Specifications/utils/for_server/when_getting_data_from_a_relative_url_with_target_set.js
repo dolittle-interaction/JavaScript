@@ -1,4 +1,4 @@
-﻿describe("when getting data from a relative url with target set", function () {
+describe("when getting data from a relative url with target set", function () {
     var url = "/Somewhere/With?query=value";
     var data = { something: 42 };
 

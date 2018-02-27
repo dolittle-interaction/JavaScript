@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     ViewModelLoadTask: doLittle.views.ComposeTask.extend(function (files, fileManager) {
         /// <summary>Represents a task for loading viewModels</summary>
         var self = this;

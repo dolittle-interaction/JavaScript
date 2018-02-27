@@ -1,4 +1,4 @@
-﻿describe("when getting namespace prefix and there is multiple prefixes", given("an element naming instance", function () {
+describe("when getting namespace prefix and there is multiple prefixes", given("an element naming instance", function () {
     var context = this;
     var exception = null;
 

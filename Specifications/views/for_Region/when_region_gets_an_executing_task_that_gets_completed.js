@@ -1,4 +1,4 @@
-﻿describe("when region gets an executing task that gets completed", function () {
+describe("when region gets an executing task that gets completed", function () {
 
     var tasks = {
         all: ko.observableArray()

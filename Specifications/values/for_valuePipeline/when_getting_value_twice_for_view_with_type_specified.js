@@ -1,4 +1,4 @@
-﻿describe("when getting value twice for view with string format", function () {
+describe("when getting value twice for view with string format", function () {
     var typeConverters = {
         convertTo: sinon.stub().returns("5")
     };

@@ -1,4 +1,4 @@
-﻿describe("when creating from an extended command with properties", function () {
+describe("when creating from an extended command with properties", function () {
     var commandAppliedTo = null;
     var command = null;
 

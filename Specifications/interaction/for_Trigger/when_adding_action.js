@@ -1,4 +1,4 @@
-﻿describe("when adding action", function () {
+describe("when adding action", function () {
 
     var action = {
         someAction: 42

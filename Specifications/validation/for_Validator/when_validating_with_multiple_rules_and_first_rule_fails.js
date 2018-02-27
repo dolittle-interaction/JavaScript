@@ -1,4 +1,4 @@
-﻿describe("when validating with multiple validators and first rule fails", function () {
+describe("when validating with multiple validators and first rule fails", function () {
     var validator;
     var options = {
         firstRule: {

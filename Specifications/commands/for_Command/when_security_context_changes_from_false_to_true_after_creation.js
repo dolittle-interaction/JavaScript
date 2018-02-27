@@ -1,4 +1,4 @@
-﻿describe("when security context changes from false to true", function () {
+describe("when security context changes from false to true", function () {
     var securityContext = {
         isAuthorized: ko.observable(false)
     };

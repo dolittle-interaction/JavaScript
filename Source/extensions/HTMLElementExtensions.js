@@ -1,4 +1,4 @@
-﻿HTMLElement.prototype.knownElementTypes = [
+HTMLElement.prototype.knownElementTypes = [
     "a",
     "abbr",
     "acronym",

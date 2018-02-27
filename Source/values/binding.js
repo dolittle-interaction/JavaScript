@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     Binding: doLittle.values.ValueProvider.extend(function (bindingContextManager) {
 
         this.defaultProperty = "path";

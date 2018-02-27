@@ -1,4 +1,4 @@
-﻿describe("when executing with exception in coordinator", function () {
+describe("when executing with exception in coordinator", function () {
     var parameters = {
         options: {
             failed: sinon.stub(),

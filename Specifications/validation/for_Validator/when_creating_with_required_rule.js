@@ -1,4 +1,4 @@
-﻿describe("when creating with required rule", function () {
+describe("when creating with required rule", function () {
     var options = { something: "hello world" };
     var validator = null;
     var required = null;

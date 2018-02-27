@@ -1,4 +1,4 @@
-﻿describe("when failing", function () {
+describe("when failing", function () {
     var error = null;
 
     var promise = doLittle.execution.Promise.create();

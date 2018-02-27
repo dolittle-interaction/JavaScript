@@ -1,4 +1,4 @@
-﻿describe("when executing task that successfully finishes", function () {
+describe("when executing task that successfully finishes", function () {
     var result = { some: "result" };
     var successfulCallback = null;
     var task = {

@@ -1,4 +1,4 @@
-﻿describe("when asking if null is object", function () {
+describe("when asking if null is object", function () {
 
     var result = doLittle.isObject(null);
 

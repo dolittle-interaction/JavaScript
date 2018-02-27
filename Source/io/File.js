@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.io", {
+doLittle.namespace("doLittle.io", {
     File: doLittle.Type.extend(function (path) {
         /// <summary>Represents a file</summary>
 

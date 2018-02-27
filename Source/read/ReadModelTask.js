@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     ReadModelTask: doLittle.tasks.LoadTask.extend(function (readModelOf, propertyFilters, taskFactory) {
         var url = "/doLittle/ReadModel/InstanceMatching?_rm=" + readModelOf._generatedFrom;
         var payload = {

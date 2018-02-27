@@ -1,4 +1,4 @@
-﻿if (typeof ko !== 'undefined') {
+if (typeof ko !== 'undefined') {
     doLittle.namespace("doLittle.validation", {
         ValidationSummary: function (commands, containerElement) {
             var self = this;

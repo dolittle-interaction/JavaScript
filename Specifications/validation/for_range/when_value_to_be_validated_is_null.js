@@ -1,4 +1,4 @@
-﻿describe("when value to be validated is null", function () {
+describe("when value to be validated is null", function () {
     var validator = doLittle.validation.range.create({ options: { min: 3, max: 10 } });
     var result = validator.validate(null);
 

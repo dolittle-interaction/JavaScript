@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     namespaces: doLittle.Singleton(function (namespaceDefinitions, elementNaming) {
         var self = this;
         var ns = "ns:";

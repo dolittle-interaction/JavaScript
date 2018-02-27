@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.navigation", {
+doLittle.namespace("doLittle.navigation", {
     navigationBindingHandler: doLittle.Type.extend(function () {
         function getNavigationFrameFor(valueAccessor) {
             var configurationString = ko.utils.unwrapObservable(valueAccessor());

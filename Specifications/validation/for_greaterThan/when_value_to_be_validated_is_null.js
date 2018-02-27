@@ -1,4 +1,4 @@
-﻿describe("when value to be validated is null", function () {
+describe("when value to be validated is null", function () {
     var validator = doLittle.validation.greaterThan.create({ options: { value: 3 } });
     var result = validator.validate(null);
 

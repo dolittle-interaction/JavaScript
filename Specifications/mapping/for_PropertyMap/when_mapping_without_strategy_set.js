@@ -1,4 +1,4 @@
-﻿describe("when mapping without strategy set", function () {
+describe("when mapping without strategy set", function () {
     var propertyMap = doLittle.mapping.PropertyMap.create({
         sourceProperty: "Source",
         typeConverters: {}

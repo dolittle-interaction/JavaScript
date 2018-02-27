@@ -1,4 +1,4 @@
-﻿describe("when asking for all", function () {
+describe("when asking for all", function () {
 
     var region = { some:"region"};
 

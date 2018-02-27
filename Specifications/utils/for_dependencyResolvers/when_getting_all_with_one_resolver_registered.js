@@ -1,4 +1,4 @@
-﻿describe("when getting all with one resolver registered", function () {
+describe("when getting all with one resolver registered", function () {
 
     var wellKnownTypesDependencyResolver = doLittle.WellKnownTypesDependencyResolver;
     var defaultDependencyResolver = doLittle.DefaultDependencyResolver;

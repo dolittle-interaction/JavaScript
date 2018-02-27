@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     MasterViewModel: doLittle.Type.extend(function (documentService) {
         var self = this;
 

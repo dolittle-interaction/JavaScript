@@ -1,4 +1,4 @@
-﻿describe("when asking if all parameters are set and they are all set", function () {
+describe("when asking if all parameters are set and they are all set", function () {
     ko.extenders.linked = sinon.stub();
 
     var firstParameter = ko.observable(1);

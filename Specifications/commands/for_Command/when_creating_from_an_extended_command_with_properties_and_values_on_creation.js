@@ -1,4 +1,4 @@
-﻿describe("when creating from an observable extended command with properties and values on creation", function () {
+describe("when creating from an observable extended command with properties and values on creation", function () {
     var commandAppliedTo = null;
     var command = null;
 

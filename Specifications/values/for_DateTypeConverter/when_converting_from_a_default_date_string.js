@@ -1,4 +1,4 @@
-﻿describe("when converting from a default date string", function () {
+describe("when converting from a default date string", function () {
 
     var converter = doLittle.values.DateTypeConverter.create();
     var result1 = converter.convertFrom("0001-01-01T00:00:00");

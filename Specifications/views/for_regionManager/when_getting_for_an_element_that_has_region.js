@@ -1,4 +1,4 @@
-﻿describe("when getting for an element that has region", function () {
+describe("when getting for an element that has region", function () {
 
     var originalView = {};
     var region = {

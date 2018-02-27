@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     Operation: doLittle.Type.extend(function (region, context) {
         /// <summary>Defines an operation that be performed</summary>
         var self = this;

@@ -1,4 +1,4 @@
-﻿describe("when performing and operation can not perform", function () {
+describe("when performing and operation can not perform", function () {
     var operation = {
         canPerform: ko.observable(false),
         perform: sinon.stub()

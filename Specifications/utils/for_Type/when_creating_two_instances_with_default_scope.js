@@ -1,4 +1,4 @@
-﻿describe("when creating two instances with default scope", function () {
+describe("when creating two instances with default scope", function () {
     var type = null;
     var firstInstance = null;
     var secondInstance = null;

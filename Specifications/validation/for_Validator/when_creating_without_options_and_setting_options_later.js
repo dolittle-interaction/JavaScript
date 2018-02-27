@@ -1,4 +1,4 @@
-﻿describe("when creating without options and setting options later", function () {
+describe("when creating without options and setting options later", function () {
     var options = { something: "hello world" };
     var rules = { knownRule: options };
     var validator = null;

@@ -1,4 +1,4 @@
-﻿describe("when valuearry changes to value not same as initial", function () {
+describe("when valuearry changes to value not same as initial", function () {
     var changeCount = 0;
 
     var array = [0, 1, 2];

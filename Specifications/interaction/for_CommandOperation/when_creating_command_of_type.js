@@ -1,4 +1,4 @@
-﻿describe("when creating command of type", function () {
+describe("when creating command of type", function () {
     var commandInstance = { myCommand: 42 };
     var commandType = {
         create: sinon.stub().returns(commandInstance),

@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     UIElementPreparer: doLittle.Singleton(function () {
         this.prepare = function (element, instance) {
             var result = instance.prepare(instance._type, element);

@@ -1,4 +1,4 @@
-﻿describe("when creating without name", function () {
+describe("when creating without name", function () {
     var parameters = {
         commandCoordinator: {
         },

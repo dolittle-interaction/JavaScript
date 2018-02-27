@@ -1,4 +1,4 @@
-﻿describe("when setting parameters with two observables on query type", function () {
+describe("when setting parameters with two observables on query type", function () {
 
     var someParameter = ko.observable();
     var someOtherParameter = ko.observable();

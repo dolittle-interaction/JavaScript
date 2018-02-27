@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     typeExtender: doLittle.Singleton(function () {
         this.extend = function (target, typeAsString) {
             target._typeAsString = typeAsString;

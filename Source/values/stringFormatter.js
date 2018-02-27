@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     stringFormatter: doLittle.Singleton(function () {
         var formatterTypes = doLittle.values.Formatter.getExtenders();
         var formattersByType = {};

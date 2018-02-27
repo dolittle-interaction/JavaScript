@@ -1,4 +1,4 @@
-﻿describe("when property on query changes but other properties are not set", function () {
+describe("when property on query changes but other properties are not set", function () {
 
     var query = {
         someProperty: ko.observable(),

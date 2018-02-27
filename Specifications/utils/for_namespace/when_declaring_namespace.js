@@ -1,4 +1,4 @@
-﻿describe("when declaring namespace", function () {
+describe("when declaring namespace", function () {
     doLittle.namespace("Something.Cool.That.Does.Not.Exist", {
         something: function () {
         },

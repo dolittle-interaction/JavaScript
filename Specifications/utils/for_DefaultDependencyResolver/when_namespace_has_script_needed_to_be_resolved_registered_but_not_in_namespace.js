@@ -1,4 +1,4 @@
-﻿describe("when requested dependency is a valid script in namespace, but not registered in doLittle.namespace", function () {
+describe("when requested dependency is a valid script in namespace, but not registered in doLittle.namespace", function () {
     var resolver = new doLittle.DefaultDependencyResolver();
     var ns;
     var resolved = null;

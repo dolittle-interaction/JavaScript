@@ -1,4 +1,4 @@
-﻿describe("when creating instance with specific scope", function () {
+describe("when creating instance with specific scope", function () {
     var type = null;
     var scopeCalled = false;
     var scopeNamespace = "";

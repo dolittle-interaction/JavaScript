@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     dependencyProperty: doLittle.Type.extend(function (propertyName) {
         this.initialize = function (UIElement) { };
         this.dispose = function (UIElement) {};

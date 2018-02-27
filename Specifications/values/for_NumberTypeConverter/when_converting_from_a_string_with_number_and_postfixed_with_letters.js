@@ -1,4 +1,4 @@
-﻿describe("when converting from a string with number and postfixed with letters", function () {
+describe("when converting from a string with number and postfixed with letters", function () {
 
     var converter = doLittle.values.NumberTypeConverter.create();
 

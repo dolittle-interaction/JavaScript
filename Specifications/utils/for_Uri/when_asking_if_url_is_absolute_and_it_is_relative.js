@@ -1,4 +1,4 @@
-﻿describe("when asking if url is absolute and it is relative", function () {
+describe("when asking if url is absolute and it is relative", function () {
 
     var result = doLittle.Uri.isAbsolute("example/url");
 

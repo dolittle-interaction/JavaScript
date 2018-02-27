@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.validation", {
+doLittle.namespace("doLittle.validation", {
     length: doLittle.validation.Rule.extend(function () {
         var self = this;
 

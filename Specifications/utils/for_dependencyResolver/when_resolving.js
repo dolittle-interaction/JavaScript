@@ -1,4 +1,4 @@
-﻿describe("when resolving", function () {
+describe("when resolving", function () {
     var firstResolver = {
         canResolve: sinon.stub().returns(false)
     };

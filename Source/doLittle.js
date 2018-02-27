@@ -1,4 +1,4 @@
-﻿/*
+/*
 @depends extensions/ArrayExtensions.js
 @depends extensions/stringExtensions.js
 @depends extensions/NodeListExtensions.js

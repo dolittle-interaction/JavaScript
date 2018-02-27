@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     Command: doLittle.Type.extend(function (commandCoordinator, commandValidationService, commandSecurityService, mapper, options, region) {
         var self = this;
         var hasChangesObservables = ko.observableArray();

@@ -1,4 +1,4 @@
-﻿describe("when validating a value that will pass by a rule", function () {
+describe("when validating a value that will pass by a rule", function () {
     var validator;
     var options = {
         someRule: {

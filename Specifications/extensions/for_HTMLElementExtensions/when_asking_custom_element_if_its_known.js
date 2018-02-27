@@ -1,4 +1,4 @@
-﻿describe("when asking custom element if its known", function () {
+describe("when asking custom element if its known", function () {
     var element = document.createElement("custom.element");
     element.constructor = new HTMLUnknownElement();
     var isKnown = element.isKnownType();

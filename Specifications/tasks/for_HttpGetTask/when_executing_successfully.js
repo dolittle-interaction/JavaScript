@@ -1,4 +1,4 @@
-﻿describe("when executing successfully", function () {
+describe("when executing successfully", function () {
 
     var url = "somewhere/else";
     var payload = { something: 42 };

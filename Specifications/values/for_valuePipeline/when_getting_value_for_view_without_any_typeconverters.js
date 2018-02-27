@@ -1,4 +1,4 @@
-﻿describe("when getting value for view without any typeconverters", function () {
+describe("when getting value for view without any typeconverters", function () {
     var typeConverters = {
         convertTo: sinon.stub()
     };

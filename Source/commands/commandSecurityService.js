@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     commandSecurityService: doLittle.Singleton(function (commandSecurityContextFactory) {
         var self = this;
 

@@ -1,4 +1,4 @@
-﻿describe("when setting paging info and all parameters are set on the query", function () {
+describe("when setting paging info and all parameters are set on the query", function () {
 
     var query = {
         someProperty: ko.observable(),

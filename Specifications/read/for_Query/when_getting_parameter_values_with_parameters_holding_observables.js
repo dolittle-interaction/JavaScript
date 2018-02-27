@@ -1,4 +1,4 @@
-﻿describe("when getting parameter values with parameters holding observables", function () {
+describe("when getting parameter values with parameters holding observables", function () {
     var firstValue = ko.observable(42);
     var secondValue = ko.observable(43);
 

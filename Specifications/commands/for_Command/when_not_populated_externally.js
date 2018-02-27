@@ -1,4 +1,4 @@
-﻿describe("when not populated externally", function () {
+describe("when not populated externally", function () {
 
     var parameters = {
         commandCoordinator: {

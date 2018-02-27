@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.types", {
+doLittle.namespace("doLittle.types", {
     TypeInfo: doLittle.Type.extend(function () {
         this.properties = [];
     })

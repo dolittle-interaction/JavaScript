@@ -1,4 +1,4 @@
-﻿describe("when command type gets set", function () {
+describe("when command type gets set", function () {
     var commandType = { some: "commandType" };
 
     var securityContext = {

@@ -1,4 +1,4 @@
-﻿describe("when mapping property with property map", function () {
+describe("when mapping property with property map", function () {
     var propertyMapType = null;
     var result = null;
     var source = { SomeProperty: 42 };

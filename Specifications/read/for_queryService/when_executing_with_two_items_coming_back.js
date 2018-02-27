@@ -1,4 +1,4 @@
-﻿describe("when executing with two items coming back", function() {
+describe("when executing with two items coming back", function() {
     var task = {
         some: "task"
     };

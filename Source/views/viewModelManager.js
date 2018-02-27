@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     viewModelManager: doLittle.Singleton(function(assetsManager, documentService, viewModelLoader, regionManager, taskFactory, viewFactory, MasterViewModel) {
         var self = this;
         this.assetsManager = assetsManager;

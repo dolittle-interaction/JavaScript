@@ -1,4 +1,4 @@
-﻿describe("when visiting known element", given("an object model element visitor", function () {
+describe("when visiting known element", given("an object model element visitor", function () {
     var context = this;
     var element;
 

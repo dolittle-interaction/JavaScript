@@ -1,4 +1,4 @@
-﻿describe("when executing with server side validation error", function () {
+describe("when executing with server side validation error", function () {
     var commandCoordinatorHandleCalled = false;
     var validationResults = [{}, {}];
     var commandAppliedTo = null;

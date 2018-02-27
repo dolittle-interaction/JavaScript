@@ -1,4 +1,4 @@
-﻿describe("when creating", function () {
+describe("when creating", function () {
     var existingOperationEntryType = null;
 
     var operationEntry = {

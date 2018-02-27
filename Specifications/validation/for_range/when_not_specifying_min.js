@@ -1,4 +1,4 @@
-﻿describe("when not specifying min", function () {
+describe("when not specifying min", function () {
     var exception = null;
     try {
         var validator = doLittle.validation.range.create({ options: { max: 5 } });

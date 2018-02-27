@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     Task: doLittle.Type.extend(function () {
         /// <summary>Represents a task that can be done in the system</summary>
         var self = this;

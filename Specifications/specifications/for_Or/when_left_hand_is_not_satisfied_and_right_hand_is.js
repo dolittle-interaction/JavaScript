@@ -1,4 +1,4 @@
-﻿describe("when left hand is not satisfied and right hand is", function () {
+describe("when left hand is not satisfied and right hand is", function () {
     
     var leftHandSideEvaluator = sinon.stub().returns(false);
     var leftHandSide = doLittle.specifications.Specification.create()

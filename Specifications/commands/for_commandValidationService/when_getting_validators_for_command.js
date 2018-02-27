@@ -1,4 +1,4 @@
-﻿describe("when getting validators for command", function () {
+describe("when getting validators for command", function () {
     var command = {
         something: ko.observable(),
         deep: {

@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     valuePipeline: doLittle.Singleton(function (typeConverters, stringFormatter) {
         this.getValueForView = function (element, value) {
             if (doLittle.isNullOrUndefined(value)) {

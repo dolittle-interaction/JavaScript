@@ -1,4 +1,4 @@
-﻿describe("when reporting error", function () {
+describe("when reporting error", function () {
 
     var task = doLittle.tasks.Task.create();
     task.reportError("something");

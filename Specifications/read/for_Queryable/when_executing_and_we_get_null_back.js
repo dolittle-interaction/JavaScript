@@ -1,4 +1,4 @@
-﻿describe("when executing and we get null back", function () {
+describe("when executing and we get null back", function () {
         var query = {
             areAllParametersSet: function () {
                 return true;

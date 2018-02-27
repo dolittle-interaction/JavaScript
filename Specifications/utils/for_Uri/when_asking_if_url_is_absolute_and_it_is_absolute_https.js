@@ -1,4 +1,4 @@
-﻿describe("when asking if url is absolute and it is absolute https", function () {
+describe("when asking if url is absolute and it is absolute https", function () {
 
     var result = doLittle.Uri.isAbsolute("https://example.com");
 

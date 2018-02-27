@@ -1,4 +1,4 @@
-﻿describe("when matching with property filters", function () {
+describe("when matching with property filters", function () {
     var propertyFilters = { some: "filter" };
     var task = { some: "task" };
     var taskFactory = {

@@ -1,4 +1,4 @@
-﻿describe("when asking for a string holding an integer", function () {
+describe("when asking for a string holding an integer", function () {
 
     var result = doLittle.isNumber("1");
 

@@ -1,4 +1,4 @@
-﻿describe("when converting from a number", function () {
+describe("when converting from a number", function () {
     var converter = doLittle.values.StringTypeConverter.create();
 
     var result = converter.convertFrom(42.43);

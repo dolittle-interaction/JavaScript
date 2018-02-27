@@ -1,4 +1,4 @@
-﻿describe("when resolving for supported type", sinon.test(function () {
+describe("when resolving for supported type", sinon.test(function () {
 
     var resolver,
         resolvedTypes,

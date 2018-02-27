@@ -1,4 +1,4 @@
-﻿describe("when the value to be validated is not a string", function () {
+describe("when the value to be validated is not a string", function () {
     var exception = null;
     try {
         var validator = doLittle.validation.email.create({ options: {} });

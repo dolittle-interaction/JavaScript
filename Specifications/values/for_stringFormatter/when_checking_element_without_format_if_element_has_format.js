@@ -1,4 +1,4 @@
-﻿describe("when checking element without format if element has format", function () {
+describe("when checking element without format if element has format", function () {
     var formatter = null;
     var formatterBefore = null;
     var result;

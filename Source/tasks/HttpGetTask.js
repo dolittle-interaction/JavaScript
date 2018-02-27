@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     HttpGetTask: doLittle.tasks.Task.extend(function (server, url, payload) {
         /// <summary>Represents a task that can perform Http Get requests</summary>
 

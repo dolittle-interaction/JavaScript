@@ -1,4 +1,4 @@
-﻿describe("when executing with success and valid", function () {
+describe("when executing with success and valid", function () {
     var successCommandResultReceived = null;
     var completeCommandResultReceived = null;
     var continueWithCallback = null;

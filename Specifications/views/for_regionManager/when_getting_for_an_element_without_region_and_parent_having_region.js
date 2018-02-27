@@ -1,4 +1,4 @@
-﻿describe("when getting for an element without region and parent having region", function () {
+describe("when getting for an element without region and parent having region", function () {
     var region = {
         existing: "region",
         children: []

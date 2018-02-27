@@ -1,4 +1,4 @@
-﻿describe("when parent namespace contains system for resolving", function () {
+describe("when parent namespace contains system for resolving", function () {
     var resolver = new doLittle.DefaultDependencyResolver();
 
     doLittle.namespace("Parent", {

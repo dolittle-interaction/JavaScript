@@ -1,4 +1,4 @@
-﻿describe("when turning pascal case into camel case", function () {
+describe("when turning pascal case into camel case", function () {
 
     var result = "Pascal-Case".toCamelCase();
 

@@ -1,4 +1,4 @@
-﻿describe("when validating with undefined", function () {
+describe("when validating with undefined", function () {
     var validator = doLittle.validation.notNull.create({ options: {} });
     var result = validator.validate();
 

@@ -1,4 +1,4 @@
-﻿describe("when getting namespace prefix on element with namespace reference", given("an element naming instance", function () {
+describe("when getting namespace prefix on element with namespace reference", given("an element naming instance", function () {
     var context = this;
     var result = null;
 

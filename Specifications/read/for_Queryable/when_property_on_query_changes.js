@@ -1,4 +1,4 @@
-﻿describe("when property on query changes", function () {
+describe("when property on query changes", function () {
 
     var query = {
         someProperty: ko.observable(41),

@@ -1,4 +1,4 @@
-﻿describe("when security context is null", function () {
+describe("when security context is null", function () {
     var parameters = {
         commandCoordinator: {
         },

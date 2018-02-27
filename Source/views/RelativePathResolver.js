@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     RelativePathResolver: doLittle.views.PathResolver.extend(function () {
         this.canResolve = function (element, path) {
             var closest = $(element).closest("[data-view]");

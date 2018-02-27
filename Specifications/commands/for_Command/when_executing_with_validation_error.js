@@ -1,4 +1,4 @@
-﻿describe("when executing with validation error", function () {
+describe("when executing with validation error", function () {
     var parameters = {
         options: {
             failed: sinon.stub(),

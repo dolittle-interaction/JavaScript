@@ -1,4 +1,4 @@
-﻿describe("when_first_command_can_execute_and_second_can_not", function () {
+describe("when_first_command_can_execute_and_second_can_not", function () {
 
     var tasks = {
         all: ko.observableArray()

@@ -1,4 +1,4 @@
-﻿describe("when getting parameters", function () {
+describe("when getting parameters", function () {
     var queryType = doLittle.read.Query.extend(function () {
         this.firstObservable = ko.observable();
         this.secondObservable = ko.observable();

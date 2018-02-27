@@ -1,4 +1,4 @@
-﻿describe("when comparison value is null", function () {
+describe("when comparison value is null", function () {
     var exception = null;
     try {
         var validator = doLittle.validation.lessThan.create({ options: { value: null } });

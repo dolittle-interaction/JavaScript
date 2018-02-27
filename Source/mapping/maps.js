@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.mapping", {
+doLittle.namespace("doLittle.mapping", {
     maps: doLittle.Singleton(function () {
         var self = this;
         var maps = {};

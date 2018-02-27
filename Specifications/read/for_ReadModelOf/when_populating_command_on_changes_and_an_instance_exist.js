@@ -1,4 +1,4 @@
-﻿describe("when populating a command on changes and an instance exists", function () {
+describe("when populating a command on changes and an instance exists", function () {
     var readModelOf = doLittle.read.ReadModelOf.create({
         mapper: {},
         region: {},

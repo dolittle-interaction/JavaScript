@@ -1,4 +1,4 @@
-﻿describe("when getting local name and there is multiple namespace prefixes", given("an element naming instance", function () {
+describe("when getting local name and there is multiple namespace prefixes", given("an element naming instance", function () {
     var context = this;
     var exception = null;
 

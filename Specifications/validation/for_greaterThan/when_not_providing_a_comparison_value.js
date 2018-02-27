@@ -1,4 +1,4 @@
-﻿describe("when not providing a comparison value", function () {
+describe("when not providing a comparison value", function () {
     var exception = null;
     try {
         var validator = doLittle.validation.greaterThan.create({ options: {} });

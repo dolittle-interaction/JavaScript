@@ -1,4 +1,4 @@
-﻿describe("when changing extension", function () {
+describe("when changing extension", function () {
 
     var newFile = doLittle.Path.changeExtension("Something/cool/file.html", "js");
 

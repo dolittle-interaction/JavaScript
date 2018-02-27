@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     operationEntryFactory: doLittle.Singleton(function () {
         /// <summary>Represents a factory that can create OperationEntries</summary>
 

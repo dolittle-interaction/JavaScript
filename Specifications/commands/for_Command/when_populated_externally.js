@@ -1,4 +1,4 @@
-﻿describe("when populated externally", function () {
+describe("when populated externally", function () {
 
     var securityContext = "SecurityContext";
     var command = doLittle.commands.Command.create({

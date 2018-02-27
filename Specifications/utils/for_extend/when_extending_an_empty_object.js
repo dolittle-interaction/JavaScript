@@ -1,4 +1,4 @@
-﻿describe("when extending an empty object", function () {
+describe("when extending an empty object", function () {
     var emptyObject = {},
     extension = {
         property: "sau",

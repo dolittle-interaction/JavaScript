@@ -1,4 +1,4 @@
-﻿describe("when creating instance with dependencies specified", function () {
+describe("when creating instance with dependencies specified", function () {
     var ex = undefined;
     var instance = null;
 

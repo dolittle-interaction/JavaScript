@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     valueProviders: doLittle.Singleton(function () {
 
         this.isKnown = function (name) {

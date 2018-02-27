@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     operationsFactory: doLittle.Singleton(function () {
         this.create = function () {
             var operations = doLittle.interaction.Operations.create();

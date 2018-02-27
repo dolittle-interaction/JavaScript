@@ -1,4 +1,4 @@
-﻿describe("when default value is specified and query parameter exist as well", function () {
+describe("when default value is specified and query parameter exist as well", function () {
     doLittle.navigation.navigationManager = {
         getCurrentLocation: sinon.stub().returns(doLittle.Uri.create("http://www.somewhere.com?something=42"))
     };

@@ -1,4 +1,4 @@
-﻿describe("when asking if string is object", function () {
+describe("when asking if string is object", function () {
 
     var result = doLittle.isObject({});
 

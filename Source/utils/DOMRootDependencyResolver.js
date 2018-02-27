@@ -1,4 +1,4 @@
-﻿doLittle.dependencyResolvers.DOMRootDependencyResolver = {
+doLittle.dependencyResolvers.DOMRootDependencyResolver = {
     canResolve: function (namespace, name) {
         return name === "DOMRoot";
     },

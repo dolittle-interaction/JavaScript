@@ -1,4 +1,4 @@
-﻿// From the following thread : http://stackoverflow.com/questions/1056728/formatting-a-date-in-javascript
+// From the following thread : http://stackoverflow.com/questions/1056728/formatting-a-date-in-javascript
 // author: meizz
 Date.prototype.format = function (format) {
     var o = {

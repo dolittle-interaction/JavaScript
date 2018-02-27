@@ -1,4 +1,4 @@
-﻿describe("when resolving a string", function () {
+describe("when resolving a string", function () {
     var expectedResult = "Say/hello/to/mr.potatohead";
     var mapping = doLittle.StringMapping.create({
         format: "{something}/{else}",

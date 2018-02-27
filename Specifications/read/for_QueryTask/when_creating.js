@@ -1,4 +1,4 @@
-﻿describe("when creating", function () {
+describe("when creating", function () {
     var query = {
         _name: "Its a query",
         _generatedFrom: "Something",

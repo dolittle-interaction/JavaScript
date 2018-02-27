@@ -1,4 +1,4 @@
-﻿describe("when creating a new instance using new", function () {
+describe("when creating a new instance using new", function () {
     var region = {};
     var options = {
         region: region,

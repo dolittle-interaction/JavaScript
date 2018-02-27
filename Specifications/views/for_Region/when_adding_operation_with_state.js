@@ -1,4 +1,4 @@
-﻿describe("when adding operation with state", function () {
+describe("when adding operation with state", function () {
 
     var tasks = {
         all: ko.observableArray()

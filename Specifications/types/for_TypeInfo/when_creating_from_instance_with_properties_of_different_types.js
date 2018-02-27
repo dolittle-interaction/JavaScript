@@ -1,4 +1,4 @@
-﻿describe("when creating from instance with no properties", function () {
+describe("when creating from instance with no properties", function () {
     var sometype = doLittle.Type.extend(function () { });
 
     var instance = {

@@ -1,4 +1,4 @@
-﻿describe("when validating with empty string", function () {
+describe("when validating with empty string", function () {
     var validator = doLittle.validation.notNull.create({ options: {} });
     var result = validator.validate("");
 

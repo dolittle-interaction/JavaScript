@@ -1,4 +1,4 @@
-﻿describe("when creating two instances with specific scope returning same value", function () {
+describe("when creating two instances with specific scope returning same value", function () {
     var type = null;
     var firstInstance = null;
     var secondInstance = null;

@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.services", {
+doLittle.namespace("doLittle.services", {
     Service: doLittle.Type.extend(function () {
         var self = this;
 

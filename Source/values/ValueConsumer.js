@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     ValueConsumer: doLittle.Type.extend(function () {
 
         this.canNotifyChanges = function () {

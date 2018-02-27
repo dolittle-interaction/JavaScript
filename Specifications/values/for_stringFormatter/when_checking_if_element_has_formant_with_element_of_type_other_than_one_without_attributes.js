@@ -1,4 +1,4 @@
-﻿describe("when checking if element has formant with element of type other than one without attributes", function () {
+describe("when checking if element has formant with element of type other than one without attributes", function () {
 
     var format = "something";
     var formatter = null;

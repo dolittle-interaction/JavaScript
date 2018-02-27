@@ -1,4 +1,4 @@
-﻿describe("when matching a string that should match", function () {
+describe("when matching a string that should match", function () {
     var mapping = doLittle.StringMapping.create({
         format: "{something}/{else}",
         mappedFormat: "whatevva"

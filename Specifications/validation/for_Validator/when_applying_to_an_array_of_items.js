@@ -1,4 +1,4 @@
-﻿describe("when applying to an array of items", function () {
+describe("when applying to an array of items", function () {
     it("should add a validator to all items", function () {
         var items = [{}, {}, {}];
         doLittle.validation.Validator.applyTo(items, {});

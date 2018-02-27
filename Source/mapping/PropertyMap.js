@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.mapping", {
+doLittle.namespace("doLittle.mapping", {
     PropertyMap: doLittle.Type.extend(function (sourceProperty, typeConverters) {
         var self = this;
 

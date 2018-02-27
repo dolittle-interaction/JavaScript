@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.io", {
+doLittle.namespace("doLittle.io", {
     fileManager: doLittle.Singleton(function () {
         /// <summary>Represents a manager for files, providing capabilities of loading and more</summary>
         var self = this;

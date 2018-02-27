@@ -1,4 +1,4 @@
-﻿describe("when changing page size and all parameters are not set on the query", function () {
+describe("when changing page size and all parameters are not set on the query", function () {
 
     var query = {
         someProperty: ko.observable(),

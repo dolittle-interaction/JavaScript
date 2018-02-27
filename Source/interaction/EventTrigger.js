@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     EventTrigger: doLittle.interaction.Trigger.extend(function () {
         var self = this;
 

@@ -1,4 +1,4 @@
-﻿describe("when initial value is set with value on observable differing", function () {
+describe("when initial value is set with value on observable differing", function () {
     var target = ko.observable(42);
     ko.extenders.hasChanges(target, {});
     target.setInitialValue(43);

@@ -1,4 +1,4 @@
-﻿describe("when not using options", function () {
+describe("when not using options", function () {
     var exception = null;
     try {
         var validator = doLittle.validation.regex.create({ options: {} });

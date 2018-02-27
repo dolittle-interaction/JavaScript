@@ -1,4 +1,4 @@
-﻿describe("when initial value is not set", function () {
+describe("when initial value is not set", function () {
     var target = ko.observable();
     ko.extenders.hasChanges(target, {});
 

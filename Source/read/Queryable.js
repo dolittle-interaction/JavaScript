@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     Queryable: doLittle.Type.extend(function (query, queryService, region, targetObservable) {
         var self = this;
 

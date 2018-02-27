@@ -1,4 +1,4 @@
-﻿describe("when getting scripts", function () {
+describe("when getting scripts", function () {
     var extension = "";
     var scripts = ["something.js", "something_else.js"];
     var scriptsReturned = [];

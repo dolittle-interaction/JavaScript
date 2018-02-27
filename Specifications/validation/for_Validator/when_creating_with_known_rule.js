@@ -1,4 +1,4 @@
-﻿describe("when creating with known rule", function () {
+describe("when creating with known rule", function () {
     var options = { something: "hello world" };
     var validator = null;
     var knownRule = null;

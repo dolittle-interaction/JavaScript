@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     Operations: doLittle.Type.extend(function (operationEntryFactory) {
         /// <summary>Represents a stack of operations and the ability to perform and put operations on the stack</summary>
         var self = this;

@@ -1,4 +1,4 @@
-﻿describe("when asking query type if has read model and it is set", function () {
+describe("when asking query type if has read model and it is set", function () {
     
     var queryType = doLittle.read.Query.extend(function () {
         this._readModel = "Something";

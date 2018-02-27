@@ -1,4 +1,4 @@
-﻿describe("when namespace contains system for resolving", function () {
+describe("when namespace contains system for resolving", function () {
     var canResolve = false;
     var resolved = null;
 

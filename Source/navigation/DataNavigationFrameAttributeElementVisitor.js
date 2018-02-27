@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.navigation", {
+doLittle.namespace("doLittle.navigation", {
     DataNavigationFrameAttributeElementVisitor: doLittle.markup.ElementVisitor.extend(function (documentService) {
         this.visit = function (element, actions) {
             var dataNavigationFrame = element.attributes.getNamedItem("data-navigation-frame");

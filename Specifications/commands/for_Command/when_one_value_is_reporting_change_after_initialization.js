@@ -1,4 +1,4 @@
-﻿describe("when one value is reporting change after initialization", function () {
+describe("when one value is reporting change after initialization", function () {
     var parameters = {
         commandCoordinator: {
         },

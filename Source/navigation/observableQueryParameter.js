@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.navigation", {
+doLittle.namespace("doLittle.navigation", {
     observableQueryParameterFactory: doLittle.Singleton(function () {
         var self = this;
 

@@ -1,4 +1,4 @@
-﻿describe("when populating command on changes", function () {
+describe("when populating command on changes", function () {
 
     var readModelOf = doLittle.read.ReadModelOf.create({
         mapper: {},

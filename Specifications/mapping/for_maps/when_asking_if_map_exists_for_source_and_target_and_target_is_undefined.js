@@ -1,4 +1,4 @@
-﻿describe("when asking if map exists for source and target and source is not a type", function () {
+describe("when asking if map exists for source and target and source is not a type", function () {
 
     var mapType = null;
     var result = null;

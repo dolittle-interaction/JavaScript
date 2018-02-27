@@ -1,4 +1,4 @@
-﻿describe("when validating with null", function () {
+describe("when validating with null", function () {
     var validator = doLittle.validation.notNull.create({ options: {} });
     var result = validator.validate(null);
 

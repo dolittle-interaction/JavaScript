@@ -1,4 +1,4 @@
-﻿describe("when validating and it should match", function () {
+describe("when validating and it should match", function () {
     var validator = doLittle.validation.regex.create({ options: { expression: "[abc]" } });
     var result = validator.validate("abcd")
 

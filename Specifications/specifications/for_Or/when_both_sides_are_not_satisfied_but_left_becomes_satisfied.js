@@ -1,4 +1,4 @@
-﻿describe("when both sides are not satisfied but left becomes satisfied", function () {
+describe("when both sides are not satisfied but left becomes satisfied", function () {
     
     var leftHandSideEvaluator = ko.observable(false);
     var leftHandSide = doLittle.specifications.Specification.create()

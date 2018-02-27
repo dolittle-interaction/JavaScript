@@ -1,4 +1,4 @@
-﻿describe("when applying validation results to properties", function () {
+describe("when applying validation results to properties", function () {
     var command = {
         name: "something",
         something: ko.observable(),

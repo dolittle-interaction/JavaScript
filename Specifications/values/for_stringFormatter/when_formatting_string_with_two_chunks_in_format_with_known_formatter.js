@@ -1,4 +1,4 @@
-﻿describe("when formatting string with two chunks in format with known formatter", function () {
+describe("when formatting string with two chunks in format with known formatter", function () {
 
     var format = "something {cool} and {more}";
     var formatter = null;

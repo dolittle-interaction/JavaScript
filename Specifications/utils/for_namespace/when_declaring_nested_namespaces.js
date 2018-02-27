@@ -1,4 +1,4 @@
-﻿describe("when declaring nested namespaces", function () {
+describe("when declaring nested namespaces", function () {
 
     if (window.First) delete window.First;
 

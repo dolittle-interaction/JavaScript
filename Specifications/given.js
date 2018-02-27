@@ -1,4 +1,4 @@
-﻿var contextsByName = {};
+var contextsByName = {};
 
 function given(name, context) {
     /*

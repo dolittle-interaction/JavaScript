@@ -1,4 +1,4 @@
-﻿describe("when validating when options are set later", function () {
+describe("when validating when options are set later", function () {
     var options = { something: "hello world" };
     var rules = { knownRule: options };
     var validator = null;

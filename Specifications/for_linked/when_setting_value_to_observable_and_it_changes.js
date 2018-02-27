@@ -1,4 +1,4 @@
-﻿describe("when setting value to observable and it changes", function () {
+describe("when setting value to observable and it changes", function () {
     var actualValue = ko.observable("42");
     var linked = ko.observable();
     linked.extend({ linked: {} });

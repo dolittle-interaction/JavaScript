@@ -1,4 +1,4 @@
-﻿describe("when beginning to resolve and resolvers can not resolve", function () {
+describe("when beginning to resolve and resolvers can not resolve", function () {
     var resolver = {
         canResolve: sinon.stub().returns(false)
     };

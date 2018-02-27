@@ -1,4 +1,4 @@
-﻿describe("when resolving a uri", function () {
+describe("when resolving a uri", function () {
     var expectedResult = "Say/hello/to/mr.potatohead";
     var uriMapping = doLittle.navigation.UriMapping.create({
         uri: "{something}/{else}",

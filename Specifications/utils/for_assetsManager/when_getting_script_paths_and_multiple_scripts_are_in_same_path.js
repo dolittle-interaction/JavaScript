@@ -1,4 +1,4 @@
-﻿describe("when getting script paths and multiple scripts are in same path", function () {
+describe("when getting script paths and multiple scripts are in same path", function () {
     var self = this;
     var paths = [];
 

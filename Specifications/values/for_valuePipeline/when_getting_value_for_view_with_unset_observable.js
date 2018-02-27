@@ -1,4 +1,4 @@
-﻿describe("when getting value for view with unset observable", function () {
+describe("when getting value for view with unset observable", function () {
     var typeConverters = {
         convertTo: sinon.stub()
     };

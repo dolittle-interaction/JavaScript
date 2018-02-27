@@ -1,4 +1,4 @@
-﻿describe("when resolving for supported type that has multiple same named extenders", sinon.test(function () {
+describe("when resolving for supported type that has multiple same named extenders", sinon.test(function () {
 
     var resolver,
         resolvedTypes,

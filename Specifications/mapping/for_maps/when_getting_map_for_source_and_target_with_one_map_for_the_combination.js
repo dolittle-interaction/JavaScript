@@ -1,4 +1,4 @@
-﻿describe("when getting map for source and target with one map for the combination", function () {
+describe("when getting map for source and target with one map for the combination", function () {
 
     var mapType = null;
     var map = null;

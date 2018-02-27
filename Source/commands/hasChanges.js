@@ -1,4 +1,4 @@
-﻿ko.extenders.hasChanges = function (target) {
+ko.extenders.hasChanges = function (target) {
     target._initialValueSet = false;
     target.hasChanges = ko.observable(false);
     function updateHasChanges() {

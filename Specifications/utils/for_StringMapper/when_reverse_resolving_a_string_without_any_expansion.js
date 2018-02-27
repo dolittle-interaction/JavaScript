@@ -1,4 +1,4 @@
-﻿describe("when reverse resolving a string without any expansion", function () {
+describe("when reverse resolving a string without any expansion", function () {
     var expectedResult = "/Features/About";
     var input = "About-Us";
 

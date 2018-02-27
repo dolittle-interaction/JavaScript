@@ -1,4 +1,4 @@
-﻿describe("when max is null", function () {
+describe("when max is null", function () {
     var exception = null;
     try {
         var validator = doLittle.validation.range.create({ options: { min: 5, max: null } });

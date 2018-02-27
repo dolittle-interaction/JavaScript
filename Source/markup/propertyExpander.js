@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     propertyExpander: doLittle.Singleton(function (valueProviderParser) {
         this.expand = function (element, target) {
             for (var attributeIndex = 0; attributeIndex < element.attributes.length; attributeIndex++) {

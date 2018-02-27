@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     commandValidationService: doLittle.Singleton(function () {
         var self = this;
 

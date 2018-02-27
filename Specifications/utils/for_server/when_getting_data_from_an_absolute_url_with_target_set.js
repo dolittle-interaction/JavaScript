@@ -1,4 +1,4 @@
-﻿describe("when getting data from an absolute url with target set", function () {
+describe("when getting data from an absolute url with target set", function () {
     var url = "http://wwww.db.no/Somewhere/With?query=value";
     var data = { something: 42 };
 

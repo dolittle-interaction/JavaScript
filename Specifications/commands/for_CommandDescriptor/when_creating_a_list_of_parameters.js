@@ -1,4 +1,4 @@
-﻿describe("when creating a list of parameters", function () {
+describe("when creating a list of parameters", function () {
     var command = {
         _name: "DoSomething",
         id: doLittle.Guid.create(),

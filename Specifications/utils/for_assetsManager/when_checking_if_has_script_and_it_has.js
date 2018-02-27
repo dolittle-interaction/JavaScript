@@ -1,4 +1,4 @@
-﻿describe("when checking if has script and it has", function () {
+describe("when checking if has script and it has", function () {
     var result = false;
     beforeEach(function () {
         doLittle.assetsManager.scripts = ["something.js", "thestuff.js"];

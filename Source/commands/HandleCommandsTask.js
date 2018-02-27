@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     HandleCommandsTask: doLittle.tasks.ExecutionTask.extend(function (commands, server) {
         /// <summary>Represents a task that can handle an array of command</summary>
         var self = this;

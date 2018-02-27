@@ -1,4 +1,4 @@
-﻿describe("when executing with failure", function () {
+describe("when executing with failure", function () {
 
     var url = "somewhere/else";
     var payload = { something: 42 };

@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     viewFactory: doLittle.Singleton(function () {
         this.createFrom = function (path) {
             var view = doLittle.views.View.create({

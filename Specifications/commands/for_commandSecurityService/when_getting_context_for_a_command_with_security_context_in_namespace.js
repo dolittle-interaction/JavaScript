@@ -1,4 +1,4 @@
-﻿describe("when getting context for a command with security context in namespace", sinon.test(function () {
+describe("when getting context for a command with security context in namespace", sinon.test(function () {
     var securityContext = {
         isAuthorized: ko.observable(false)
     };

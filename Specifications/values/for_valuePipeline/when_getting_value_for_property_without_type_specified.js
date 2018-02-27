@@ -1,4 +1,4 @@
-﻿describe("when getting value for property without type specified", function () {
+describe("when getting value for property without type specified", function () {
     var typeConverters = {
         convertFrom: sinon.stub()
 

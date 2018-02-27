@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     PathResolver: doLittle.Type.extend(function () {
         this.canResolve = function (element, path) {
             return false;

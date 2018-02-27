@@ -1,4 +1,4 @@
-﻿describe("when value to be validated is undefined", function () {
+describe("when value to be validated is undefined", function () {
     var validator = doLittle.validation.regex.create({ options: { expression: "[abc]" } });
     var result = validator.validate()
 

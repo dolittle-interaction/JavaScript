@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     Formatter: doLittle.Type.extend(function () {
         this.supportedType = null;
 

@@ -1,4 +1,4 @@
-﻿
+
 function polyfillForEach() {
     if (typeof Array.prototype.forEach !== "function") {
         Array.prototype.forEach = function (callback, thisArg) {

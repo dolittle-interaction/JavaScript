@@ -1,4 +1,4 @@
-﻿describe("when validator for property becomes invalid", function () {
+describe("when validator for property becomes invalid", function () {
     var isValid = ko.observable(true);
     var instance = null;
 

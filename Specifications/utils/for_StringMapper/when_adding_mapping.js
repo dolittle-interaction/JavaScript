@@ -1,4 +1,4 @@
-﻿describe("when adding mapping", function () {
+describe("when adding mapping", function () {
     var mappings = [{
         something: 42
     }, {

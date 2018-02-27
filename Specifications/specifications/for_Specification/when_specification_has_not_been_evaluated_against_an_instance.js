@@ -1,4 +1,4 @@
-﻿describe("when specification has not been evaluated against an instance", function () {
+describe("when specification has not been evaluated against an instance", function () {
 
     var evaluator = sinon.stub();
     var rule = doLittle.specifications.Specification.create();

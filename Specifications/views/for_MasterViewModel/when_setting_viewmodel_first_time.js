@@ -1,4 +1,4 @@
-﻿describe("when setting viewmodel first time", function () {
+describe("when setting viewmodel first time", function () {
 
     var viewModel = {
         _type: {

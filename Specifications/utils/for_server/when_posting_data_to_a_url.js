@@ -1,4 +1,4 @@
-﻿describe("when posting data to a url", sinon.test(function () {
+describe("when posting data to a url", sinon.test(function () {
     var url = "/Somewhere/With?query=value";
     var fakeServer = sinon.fakeServer.create();
     var data = { something: 42 };

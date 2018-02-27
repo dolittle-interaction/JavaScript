@@ -1,4 +1,4 @@
-﻿describe("when value to be validated is undefined", function () {
+describe("when value to be validated is undefined", function () {
     var exception = null;
     try {
         doLittle.validation.ruleHandlers.greaterThan.validate(undefined, { value: 3 });

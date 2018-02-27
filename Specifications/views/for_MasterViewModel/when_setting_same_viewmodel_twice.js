@@ -1,4 +1,4 @@
-﻿describe("when setting same viewmodel twice", function () {
+describe("when setting same viewmodel twice", function () {
 
     var viewModel = {
         _type: {

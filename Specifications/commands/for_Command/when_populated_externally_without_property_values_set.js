@@ -1,4 +1,4 @@
-﻿describe("when populated externally without property values set", function () {
+describe("when populated externally without property values set", function () {
 
     var securityContext = "SecurityContext";
     var command = doLittle.commands.Command.create({

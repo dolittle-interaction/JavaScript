@@ -1,4 +1,4 @@
-﻿
+
 describe("when extending an object with overlapping content", function () {
     var overlappingObject = {
         property: "horse",

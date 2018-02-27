@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.mapping", {
+doLittle.namespace("doLittle.mapping", {
     Map: doLittle.Type.extend(function () {
         var self = this;
 

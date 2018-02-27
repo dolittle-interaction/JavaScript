@@ -1,4 +1,4 @@
-﻿describe("when inherited map sets source and target", function () {
+describe("when inherited map sets source and target", function () {
     var source = "Source";
     var target = "Target";
     

@@ -1,4 +1,4 @@
-﻿describe("when failing with callback defined ", function () {
+describe("when failing with callback defined ", function () {
     var error = null;
     var errorCalledWith = null;
 

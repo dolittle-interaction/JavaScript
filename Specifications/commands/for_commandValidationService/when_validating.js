@@ -1,4 +1,4 @@
-﻿describe("when validating", function () {
+describe("when validating", function () {
     var command = {
         name: "something",
         something: ko.observable("somethingObservable"),

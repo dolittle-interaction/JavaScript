@@ -1,4 +1,4 @@
-﻿describe("when getting data from a url that returns an array of elements", sinon.test(function () {
+describe("when getting data from a url that returns an array of elements", sinon.test(function () {
     var url = "/Somewhere/With?query=value";
     var fakeServer = sinon.fakeServer.create();
     var data = { something: 42 };

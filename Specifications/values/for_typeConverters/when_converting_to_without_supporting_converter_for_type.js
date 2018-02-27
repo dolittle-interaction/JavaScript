@@ -1,4 +1,4 @@
-﻿describe("when converting to without supporting converter for type", function () {
+describe("when converting to without supporting converter for type", function () {
 
     var convertedValue = 42;
     var typeConverter = {

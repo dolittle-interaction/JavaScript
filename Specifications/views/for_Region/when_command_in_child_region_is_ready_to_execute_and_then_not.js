@@ -1,4 +1,4 @@
-﻿describe("when command in child region is ready to execute and then not", function () {
+describe("when command in child region is ready to execute and then not", function () {
 
     var tasks = {
         all: ko.observableArray()

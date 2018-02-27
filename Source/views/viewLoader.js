@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     viewLoader: doLittle.Singleton(function (viewModelManager, taskFactory, fileFactory, regionManager) {
         this.load = function (path,region) {
             var promise = doLittle.execution.Promise.create();

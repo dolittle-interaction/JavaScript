@@ -1,4 +1,4 @@
-﻿describe("when asking for paged", function () {
+describe("when asking for paged", function () {
 
     var queryableFactory = {};
     var region = { some: "region" };

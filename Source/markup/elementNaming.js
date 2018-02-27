@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     elementNaming: doLittle.Singleton(function () {
 
         function getNameAndNamespace(element) {

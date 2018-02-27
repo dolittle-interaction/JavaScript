@@ -1,4 +1,4 @@
-﻿describe("when setting region on element", function () {
+describe("when setting region on element", function () {
     var service = doLittle.documentService.createWithoutScope({
         DOMRoot: {}
     });

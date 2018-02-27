@@ -1,4 +1,4 @@
-﻿describe("when loading and instance is null", function () {
+describe("when loading and instance is null", function () {
     var propertyFilters = { some: "filter" };
     var task = { some: "task" };
     var taskFactory = {

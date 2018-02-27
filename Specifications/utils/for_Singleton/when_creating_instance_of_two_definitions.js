@@ -1,4 +1,4 @@
-﻿describe("when creating instance of two definition", function () {
+describe("when creating instance of two definition", function () {
     var firstSingleton = doLittle.Singleton(function () {
         this.something = "Hello";
     });

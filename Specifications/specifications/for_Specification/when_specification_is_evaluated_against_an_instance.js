@@ -1,4 +1,4 @@
-﻿describe("when specification is evaluated against an instance", function () {
+describe("when specification is evaluated against an instance", function () {
 
     var evaluator = sinon.stub().returns(true);
     var rule = doLittle.specifications.Specification.create();

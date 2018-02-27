@@ -1,4 +1,4 @@
-﻿describe("when initialized without event name set", function () {
+describe("when initialized without event name set", function () {
 
     var element = $("<button/>");
     var trigger = doLittle.interaction.EventTrigger.create();

@@ -1,4 +1,4 @@
-﻿describe("when setting property values", function () {
+describe("when setting property values", function () {
     var parameters = {
         commandCoordinator: {
         },

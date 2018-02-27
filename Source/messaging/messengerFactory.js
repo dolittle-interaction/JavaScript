@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.messaging", {
+doLittle.namespace("doLittle.messaging", {
     messengerFactory: doLittle.Singleton(function () {
         this.create = function () {
             var messenger = doLittle.messaging.Messenger.create();

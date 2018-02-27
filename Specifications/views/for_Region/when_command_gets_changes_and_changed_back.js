@@ -1,4 +1,4 @@
-﻿describe("when command gets changes and changed back", function () {
+describe("when command gets changes and changed back", function () {
 
     var tasks = {
         all: ko.observableArray()

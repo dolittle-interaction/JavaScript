@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     pathResolvers: doLittle.Singleton(function () {
 
         function getResolvers() {

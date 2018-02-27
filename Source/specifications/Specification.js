@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.specifications", {
+doLittle.namespace("doLittle.specifications", {
     Specification: doLittle.Type.extend(function () {
         /// <summary>Represents a rule based on the specification pattern</summary>
         var self = this;

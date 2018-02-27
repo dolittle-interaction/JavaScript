@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     OperationEntry: doLittle.Type.extend(function (operation, state) {
         /// <summary>Represents an entry for an operation in a specific context with resulting state</summary>
 

@@ -1,4 +1,4 @@
-﻿describe("when getting for an element without region and parent not having region", function () {
+describe("when getting for an element without region and parent not having region", function () {
     var element = {
         DOM:"element"
     };

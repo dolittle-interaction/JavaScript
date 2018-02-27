@@ -1,4 +1,4 @@
-﻿describe("when there are no commands", function () {
+describe("when there are no commands", function () {
 
     var tasks = {
         all: ko.observableArray()

@@ -1,4 +1,4 @@
-﻿describe("when command is valid and then not", function () {
+describe("when command is valid and then not", function () {
 
     var tasks = {
         all: ko.observableArray()

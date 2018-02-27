@@ -1,4 +1,4 @@
-﻿describe("when validating without options", function () {
+describe("when validating without options", function () {
     var someRule = null;
 
     beforeEach(function () {

@@ -1,4 +1,4 @@
-﻿describe("when creating with parameters", function () {
+describe("when creating with parameters", function () {
     var format = "Something";
     var mappedFormat = "SomethingElse";
 

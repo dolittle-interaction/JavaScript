@@ -1,4 +1,4 @@
-﻿describe("when signalling with one action", function () {
+describe("when signalling with one action", function () {
     var firstAction = {
         perform: sinon.stub()
     };

@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     ViewBindingHandlerTemplateSource: doLittle.Type.extend(function (viewFactory) {
         var content = "";
 

@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     Event: doLittle.Type.extend(function () {
         var subscribers = [];
 

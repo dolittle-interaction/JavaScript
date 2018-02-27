@@ -1,4 +1,4 @@
-﻿describe("when value to be validated is not a number", function () {
+describe("when value to be validated is not a number", function () {
     var exception = null;
     try {
         var validator = doLittle.validation.greaterThan.create({ options: { value: 3 } });

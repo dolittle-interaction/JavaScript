@@ -1,4 +1,4 @@
-﻿describe("when string is longer", function () {
+describe("when string is longer", function () {
     var validator = doLittle.validation.maxLength.create({ options: { length: 5 } });
     var result = validator.validate("123456");
 

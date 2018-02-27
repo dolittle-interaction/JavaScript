@@ -1,4 +1,4 @@
-﻿describe("when security context returns true for can execute", function () {
+describe("when security context returns true for can execute", function () {
     var parameters = {
         commandCoordinator: {
         },

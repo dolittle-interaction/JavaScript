@@ -1,4 +1,4 @@
-﻿ko.extenders.linked = function (target, options) {
+ko.extenders.linked = function (target, options) {
     function setupValueSubscription(value) {
         if (ko.isObservable(value)) {
             var subscription = value.subscribe(function () {

@@ -1,4 +1,4 @@
-﻿describe("when asking known element if its known", function () {
+describe("when asking known element if its known", function () {
     var element = document.createElement("div");
     var isKnown = element.isKnownType();
 

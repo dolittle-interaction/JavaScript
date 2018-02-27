@@ -1,4 +1,4 @@
-﻿describe("when command can execute and then not", function () {
+describe("when command can execute and then not", function () {
 
     var tasks = {
         all: ko.observableArray()

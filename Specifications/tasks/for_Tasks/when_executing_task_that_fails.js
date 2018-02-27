@@ -1,4 +1,4 @@
-﻿describe("when executing task that fails", function () {
+describe("when executing task that fails", function () {
     var error = "Some error";
 
     var failedCallback = null;

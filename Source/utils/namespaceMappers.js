@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     namespaceMappers: {
 
         mapPathToNamespace: function (path) {

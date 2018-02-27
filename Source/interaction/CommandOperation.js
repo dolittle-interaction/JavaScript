@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     CommandOperation: doLittle.interaction.Operation.extend(function (commandSecurityService) {
         /// <summary>Represents an operation that result in a command</summary>
         var self = this;

@@ -1,4 +1,4 @@
-﻿describe("when observing global messenger and message is published", function () {
+describe("when observing global messenger and message is published", function () {
 
     var observable = null;
     beforeEach(function () {

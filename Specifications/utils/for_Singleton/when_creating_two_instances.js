@@ -1,4 +1,4 @@
-﻿describe("when creating two instances", function () {
+describe("when creating two instances", function () {
     var type = null;
     var firstInstance = null;
     var secondInstance = null;

@@ -1,4 +1,4 @@
-﻿describe("when first command gets change and second has not", function () {
+describe("when first command gets change and second has not", function () {
 
     var tasks = {
         all: ko.observableArray()

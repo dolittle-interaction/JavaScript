@@ -1,4 +1,4 @@
-﻿given("a namespaces instance", function () {
+given("a namespaces instance", function () {
     var context = this;
 
     this.namespaceDefinitions = {

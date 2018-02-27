@@ -1,4 +1,4 @@
-﻿describe("when copying to", function () {
+describe("when copying to", function () {
 
     var readModelType = doLittle.read.ReadModel.extend(function () {
         var self = this;

@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     TaskHistoryEntry: doLittle.Type.extend(function () {
         var self = this;
 

@@ -1,4 +1,4 @@
-﻿describe("when performing", function () {
+describe("when performing", function () {
     var context = {
         someContext: 42
     };

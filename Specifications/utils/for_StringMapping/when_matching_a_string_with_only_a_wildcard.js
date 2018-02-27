@@ -1,4 +1,4 @@
-﻿describe("when matching a string with only a wildcard", function () {
+describe("when matching a string with only a wildcard", function () {
     var mapping = doLittle.StringMapping.create({
         format: "**/",
         mappedFormat: "**."

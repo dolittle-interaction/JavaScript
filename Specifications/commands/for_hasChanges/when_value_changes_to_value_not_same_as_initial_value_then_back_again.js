@@ -1,4 +1,4 @@
-﻿describe("when value changes to value not same as initial value then back again", function () {
+describe("when value changes to value not same as initial value then back again", function () {
     var changeCount = 0;
 
     var target = ko.observable(43);

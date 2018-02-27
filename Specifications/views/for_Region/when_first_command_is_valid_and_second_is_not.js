@@ -1,4 +1,4 @@
-﻿describe("when first command is valid and second is not", function () {
+describe("when first command is valid and second is not", function () {
 
     var tasks = {
         all: ko.observableArray()

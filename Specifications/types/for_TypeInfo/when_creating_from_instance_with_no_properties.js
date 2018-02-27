@@ -1,4 +1,4 @@
-﻿describe("when creating from instance with no properties", function () {
+describe("when creating from instance with no properties", function () {
     var instance = {};
 
     var typeInfo = doLittle.types.TypeInfo.createFrom(instance);

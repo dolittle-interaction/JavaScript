@@ -1,4 +1,4 @@
-﻿describe("when mapping with a simple to strategy with mismatching types in source and target", function () {
+describe("when mapping with a simple to strategy with mismatching types in source and target", function () {
     var propertyMap = doLittle.mapping.PropertyMap.create({
         sourceProperty: "sourceProperty",
         typeConverters: {

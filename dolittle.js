@@ -1,4 +1,4 @@
-﻿
+
 function polyfillForEach() {
     if (typeof Array.prototype.forEach !== "function") {
         Array.prototype.forEach = function (callback, thisArg) {
@@ -93,9 +93,10 @@ String.prototype.hashCode = function () {
     }
     return hash;
 };
-﻿NodeList.prototype.forEach = Array.prototype.forEach;
+
+NodeList.prototype.forEach = Array.prototype.forEach;
 NodeList.prototype.length = Array.prototype.length;
-﻿HTMLElement.prototype.knownElementTypes = [
+HTMLElement.prototype.knownElementTypes = [
     "a",
     "abbr",
     "acronym",
@@ -260,9 +261,9 @@ HTMLElement.prototype.getChildElements = function () {
     });
     return children;
 };
-﻿HTMLCollection.prototype.forEach = Array.prototype.forEach;
+HTMLCollection.prototype.forEach = Array.prototype.forEach;
 HTMLCollection.prototype.length = Array.prototype.length;
-﻿// From the following thread : http://stackoverflow.com/questions/1056728/formatting-a-date-in-javascript
+// From the following thread : http://stackoverflow.com/questions/1056728/formatting-a-date-in-javascript
 // author: meizz
 Date.prototype.format = function (format) {
     var o = {
@@ -287,7 +288,7 @@ Date.prototype.format = function (format) {
     }
     return format;
 };
-﻿/*
+/*
  * classList.js: Cross-browser full element.classList implementation.
  * 2012-11-15
  *
@@ -465,7 +466,7 @@ if ("document" in self && !(
 
     }(self));
 }
-﻿// From: http://www.jonathantneal.com/blog/faking-the-future/
+// From: http://www.jonathantneal.com/blog/faking-the-future/
 this.Element && (function (ElementPrototype, polyfill) {
     function NodeList() { [polyfill] }
     NodeList.prototype.length = Array.prototype.length;
@@ -644,27 +645,27 @@ doLittle.namespace("doLittle", {
         return Object.prototype.toString.call(o) === '[object Array]';
     }
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     isString: function (value) {
         return typeof value === "string";
         }
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     isNull: function (value) {
         return value === null;
     }
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     isUndefined: function (value) {
         return typeof value === "undefined";
     }
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     isNullOrUndefined: function (value) {
         return doLittle.isUndefined(value) || doLittle.isNull(value);
     }
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     isFunction: function (value) {
         return typeof value === "function";
     }
@@ -698,7 +699,7 @@ doLittle.namespace("doLittle", {
         }
     }
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     assetsManager: {
         scripts: [],
         isInitialized: function() {
@@ -743,7 +744,7 @@ doLittle.namespace("doLittle", {
         }
     }
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     WellKnownTypesDependencyResolver: function () {
         var self = this;
         this.types = doLittle.WellKnownTypesDependencyResolver.types;
@@ -915,7 +916,7 @@ doLittle.namespace("doLittle", {
         };
     })()
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     DefaultDependencyResolver: function () {
         var self = this;
 
@@ -1007,7 +1008,7 @@ doLittle.namespace("doLittle", {
     }
 });
 
-﻿doLittle.dependencyResolvers.DOMRootDependencyResolver = {
+doLittle.dependencyResolvers.DOMRootDependencyResolver = {
     canResolve: function (namespace, name) {
         return name === "DOMRoot";
     },
@@ -1029,7 +1030,7 @@ doLittle.dependencyResolvers.DOMRootDependencyResolver.documentIsReady = functio
         promise.signal(document.body);
     });
 };
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     KnownArtifactTypesDependencyResolver: function () {
         var self = this;
         var supportedArtifacts = {
@@ -1079,7 +1080,7 @@ doLittle.dependencyResolvers.DOMRootDependencyResolver.documentIsReady = functio
         };
     }
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     KnownArtifactInstancesDependencyResolver: function () {
         var self = this;
         var supportedArtifacts = {
@@ -1568,12 +1569,12 @@ doLittle.namespace("doLittle", {
         return promise;
     };
 })();
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     Singleton: function (typeDefinition) {
         return doLittle.Type.extend(typeDefinition).scopeTo(window);
     }
 });
-﻿doLittle.namespace("doLittle.types", {
+doLittle.namespace("doLittle.types", {
     TypeInfo: doLittle.Type.extend(function () {
         this.properties = [];
     })
@@ -1601,13 +1602,13 @@ doLittle.types.TypeInfo.createFrom = function (instance) {
     return typeInfo;
 };
 
-﻿doLittle.namespace("doLittle.types", {
+doLittle.namespace("doLittle.types", {
     PropertyInfo: doLittle.Type.extend(function (name, type) {
         this.name = name;
         this.type = type;
     })
 });
-﻿doLittle.namespace("doLittle", {
+doLittle.namespace("doLittle", {
     Path: doLittle.Type.extend(function (fullPath) {
         var self = this;
 
@@ -1941,7 +1942,7 @@ doLittle.namespace("doLittle", {
         };
     })
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     namespaceMappers: {
 
         mapPathToNamespace: function (path) {
@@ -1957,7 +1958,7 @@ doLittle.namespace("doLittle", {
         }
     }
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     StringMapping: doLittle.Type.extend(function (format, mappedFormat) {
         var self = this;
 
@@ -2032,7 +2033,7 @@ doLittle.namespace("doLittle", {
         };
     })
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     stringMappingFactory: doLittle.Singleton(function () {
 
         this.create = function (format, mappedFormat) {
@@ -2044,7 +2045,7 @@ doLittle.namespace("doLittle", {
         };
     })
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     StringMapper: doLittle.Type.extend(function (stringMappingFactory) {
         var self = this;
 
@@ -2134,11 +2135,11 @@ doLittle.namespace("doLittle", {
         };
     })
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     uriMappers: {
     }
 });
-﻿doLittle.namespace("doLittle", {
+doLittle.namespace("doLittle", {
     server: doLittle.Singleton(function () {
         var self = this;
 
@@ -2238,7 +2239,7 @@ doLittle.namespace("doLittle", {
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.server = doLittle.server;
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     areEqual: function (source, target) {
         function isReservedMemberName(member) {
             return member.indexOf("_") >= 0 || member === "model" || member === "commons" || member === "targetViewModel" || member === "region";
@@ -2302,7 +2303,7 @@ doLittle.WellKnownTypesDependencyResolver.types.server = doLittle.server;
         return true;
     }
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     deepClone: function (source, target) {
         function isReservedMemberName(member) {
             return member.indexOf("_") >= 0 || member === "model" || member === "commons" || member === "targetViewModel" || member === "region";
@@ -2363,7 +2364,7 @@ doLittle.WellKnownTypesDependencyResolver.types.server = doLittle.server;
     }
 });
 
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     systemClock: doLittle.Singleton(function () {
         this.nowInMilliseconds = function () {
             return window.performance.now();
@@ -2600,7 +2601,7 @@ doLittle.TimeSpan.fromDates = function (firstDate, secondDate, forcePositive) {
     return new doLittle.TimeSpan(differenceMsecs, 0, 0, 0, 0);
 };
 
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     Event: doLittle.Type.extend(function () {
         var subscribers = [];
 
@@ -2615,7 +2616,7 @@ doLittle.TimeSpan.fromDates = function (firstDate, secondDate, forcePositive) {
         };
     })
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     systemEvents: doLittle.Singleton(function () {
         this.readModels = doLittle.read.readModelSystemEvents.create();
         this.commands = doLittle.commands.commandEvents.create();
@@ -2629,7 +2630,7 @@ doLittle.namespace("doLittle", {
         };
     })
 });
-﻿ko.extenders.linked = function (target, options) {
+ko.extenders.linked = function (target, options) {
     function setupValueSubscription(value) {
         if (ko.isObservable(value)) {
             var subscription = value.subscribe(function () {
@@ -2650,7 +2651,7 @@ doLittle.namespace("doLittle", {
     var currentValue = target();
     setupValueSubscription(currentValue);
 };
-﻿doLittle.namespace("doLittle.hubs", {
+doLittle.namespace("doLittle.hubs", {
     hubConnection: doLittle.Singleton(function () {
         var self = this;
         var hub = $.hubConnection("/signalr", { useDefaultPath: false });
@@ -2675,7 +2676,7 @@ doLittle.namespace("doLittle", {
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.hubConnection = doLittle.hubs.hubConnection;
-﻿doLittle.namespace("doLittle.hubs", {
+doLittle.namespace("doLittle.hubs", {
     Hub: doLittle.Type.extend(function (hubConnection) {
         var self = this;
 
@@ -2746,7 +2747,7 @@ doLittle.WellKnownTypesDependencyResolver.types.hubConnection = doLittle.hubs.hu
     })
 });
 
-﻿doLittle.dependencyResolvers.hub = {
+doLittle.dependencyResolvers.hub = {
     canResolve: function (namespace, name) {
         if (typeof hubs !== "undefined") {
             return name in hubs;
@@ -2758,7 +2759,7 @@ doLittle.WellKnownTypesDependencyResolver.types.hubConnection = doLittle.hubs.hu
         return hubs[name].create();
     }
 };
-﻿doLittle.namespace("doLittle.io", {
+doLittle.namespace("doLittle.io", {
     fileType: {
         unknown: 0,
         text: 1,
@@ -2766,7 +2767,7 @@ doLittle.WellKnownTypesDependencyResolver.types.hubConnection = doLittle.hubs.hu
         html: 3
     }
 });
-﻿doLittle.namespace("doLittle.io", {
+doLittle.namespace("doLittle.io", {
     File: doLittle.Type.extend(function (path) {
         /// <summary>Represents a file</summary>
 
@@ -2777,7 +2778,7 @@ doLittle.WellKnownTypesDependencyResolver.types.hubConnection = doLittle.hubs.hu
         this.path = doLittle.Path.create({ fullPath: path });
     })
 });
-﻿doLittle.namespace("doLittle.io", {
+doLittle.namespace("doLittle.io", {
     fileFactory: doLittle.Singleton(function () {
         /// <summary>Represents a factory for creating instances of doLittle.io.File</summary>
         this.create = function (path, fileType) {
@@ -2795,7 +2796,7 @@ doLittle.WellKnownTypesDependencyResolver.types.hubConnection = doLittle.hubs.hu
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.fileFactory = doLittle.io.fileFactory;
-﻿doLittle.namespace("doLittle.io", {
+doLittle.namespace("doLittle.io", {
     fileManager: doLittle.Singleton(function () {
         /// <summary>Represents a manager for files, providing capabilities of loading and more</summary>
         var self = this;
@@ -2857,7 +2858,7 @@ doLittle.WellKnownTypesDependencyResolver.types.fileFactory = doLittle.io.fileFa
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.fileManager = doLittle.io.fileManager;
-﻿doLittle.namespace("doLittle.specifications", {
+doLittle.namespace("doLittle.specifications", {
     Specification: doLittle.Type.extend(function () {
         /// <summary>Represents a rule based on the specification pattern</summary>
         var self = this;
@@ -2948,7 +2949,7 @@ doLittle.specifications.Specification.when = function (evaluator) {
     rule.evaluator = evaluator;
     return rule;
 };
-﻿doLittle.namespace("doLittle.specifications", {
+doLittle.namespace("doLittle.specifications", {
     And: doLittle.specifications.Specification.extend(function (leftHandSide, rightHandSide) {
         /// <summary>Represents the "and" composite rule based on the specification pattern</summary>
 
@@ -2963,7 +2964,7 @@ doLittle.specifications.Specification.when = function (evaluator) {
         };
     })
 });
-﻿doLittle.namespace("doLittle.specifications", {
+doLittle.namespace("doLittle.specifications", {
     Or: doLittle.specifications.Specification.extend(function (leftHandSide, rightHandSide) {
         /// <summary>Represents the "or" composite rule based on the specification pattern</summary>
 
@@ -2978,7 +2979,7 @@ doLittle.specifications.Specification.when = function (evaluator) {
         };
     })
 });
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     Task: doLittle.Type.extend(function () {
         /// <summary>Represents a task that can be done in the system</summary>
         var self = this;
@@ -3004,7 +3005,7 @@ doLittle.specifications.Specification.when = function (evaluator) {
         };
     })
 });
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     TaskHistoryEntry: doLittle.Type.extend(function () {
         var self = this;
 
@@ -3035,7 +3036,7 @@ doLittle.specifications.Specification.when = function (evaluator) {
         });
     })
 });
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     taskHistory: doLittle.Singleton(function (systemClock) {
         /// <summary>Represents the history of tasks that has been executed since the start of the application</summary>
         var self = this;
@@ -3090,7 +3091,7 @@ doLittle.specifications.Specification.when = function (evaluator) {
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.taskHistory = doLittle.tasks.taskHistory;
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     Tasks: doLittle.Type.extend(function (taskHistory) {
         /// <summary>Represents an aggregation of tasks</summary>
         var self = this;
@@ -3180,7 +3181,7 @@ doLittle.WellKnownTypesDependencyResolver.types.taskHistory = doLittle.tasks.tas
         };
     })
 });
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     tasksFactory: doLittle.Singleton(function () {
         this.create = function () {
             var tasks = doLittle.tasks.Tasks.create();
@@ -3189,7 +3190,7 @@ doLittle.WellKnownTypesDependencyResolver.types.taskHistory = doLittle.tasks.tas
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.tasksFactory = doLittle.tasks.tasksFactory;
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     HttpGetTask: doLittle.tasks.Task.extend(function (server, url, payload) {
         /// <summary>Represents a task that can perform Http Get requests</summary>
 
@@ -3207,7 +3208,7 @@ doLittle.WellKnownTypesDependencyResolver.types.tasksFactory = doLittle.tasks.ta
         };
     })
 });
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     HttpPostTask: doLittle.tasks.Task.extend(function (server, url, payload) {
         /// <summary>Represents a task that can perform a Http Post request</summary>
 
@@ -3226,7 +3227,7 @@ doLittle.WellKnownTypesDependencyResolver.types.tasksFactory = doLittle.tasks.ta
         };
     })
 });
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     LoadTask: doLittle.tasks.Task.extend(function () {
         /// <summary>Represents a base task that represents anything that is loading things</summary>
         this.execute = function () {
@@ -3236,7 +3237,7 @@ doLittle.WellKnownTypesDependencyResolver.types.tasksFactory = doLittle.tasks.ta
         };
     })
 });
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     FileLoadTask: doLittle.tasks.LoadTask.extend(function (files, fileManager) {
         /// <summary>Represents a task for loading view related files asynchronously</summary>
         this.files = files;
@@ -3258,14 +3259,14 @@ doLittle.WellKnownTypesDependencyResolver.types.tasksFactory = doLittle.tasks.ta
         };
     })
 });
-﻿doLittle.namespace("doLittle.tasks", {
+doLittle.namespace("doLittle.tasks", {
     ExecutionTask: doLittle.tasks.Task.extend(function () {
         /// <summary>Represents a base task that represents anything that is executing</summary>
         this.execute = function () {
         };
     })
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     taskFactory: doLittle.Singleton(function () {
         this.createHttpPost = function (url, payload) {
             var task = doLittle.tasks.HttpPostTask.create({
@@ -3456,7 +3457,7 @@ doLittle.validation.Validator = (function () {
     };
 })();
 
-﻿if (typeof ko !== 'undefined') {
+if (typeof ko !== 'undefined') {
     doLittle.namespace("doLittle.validation", {
         ValidationSummary: function (commands, containerElement) {
             var self = this;
@@ -3565,7 +3566,7 @@ doLittle.namespace("doLittle.validation", {
 });
 
 
-﻿doLittle.namespace("doLittle.validation", {
+doLittle.namespace("doLittle.validation", {
     length: doLittle.validation.Rule.extend(function () {
         var self = this;
 
@@ -3967,7 +3968,7 @@ if (typeof ko !== 'undefined') {
         }
     };
 }
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     HandleCommandTask: doLittle.tasks.ExecutionTask.extend(function (command, server, systemEvents) {
         /// <summary>Represents a task that can handle a command</summary>
         this.name = command.name;
@@ -4005,7 +4006,7 @@ if (typeof ko !== 'undefined') {
         };
     })
 });
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     HandleCommandsTask: doLittle.tasks.ExecutionTask.extend(function (commands, server) {
         /// <summary>Represents a task that can handle an array of command</summary>
         var self = this;
@@ -4087,7 +4088,7 @@ doLittle.namespace("doLittle.commands", {
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.commandCoordinator = doLittle.commands.commandCoordinator;
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     commandValidationService: doLittle.Singleton(function () {
         var self = this;
 
@@ -4262,7 +4263,7 @@ doLittle.WellKnownTypesDependencyResolver.types.commandCoordinator = doLittle.co
         };
     })
 });
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     Command: doLittle.Type.extend(function (commandCoordinator, commandValidationService, commandSecurityService, mapper, options, region) {
         var self = this;
         var hasChangesObservables = ko.observableArray();
@@ -4565,7 +4566,7 @@ doLittle.WellKnownTypesDependencyResolver.types.commandCoordinator = doLittle.co
         };
     })
 });
-﻿doLittle.namespace("doLittle.commands");
+doLittle.namespace("doLittle.commands");
 doLittle.commands.CommandRequest = function(command) {
     var self = this;
 
@@ -4669,7 +4670,7 @@ doLittle.commands.CommandResult = (function () {
         }
     };
 })();
-﻿doLittle.dependencyResolvers.command = {
+doLittle.dependencyResolvers.command = {
     canResolve: function (namespace, name) {
         if (typeof commands !== "undefined") {
             return name in commands;
@@ -4681,12 +4682,12 @@ doLittle.commands.CommandResult = (function () {
         return commands[name].create();
     }
 };
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     CommandSecurityContext: doLittle.Type.extend(function () {
         this.isAuthorized = ko.observable(false);
     })
 });
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     commandSecurityContextFactory: doLittle.Singleton(function () {
         this.create = function () {
             var context = doLittle.commands.CommandSecurityContext.create();
@@ -4694,7 +4695,7 @@ doLittle.commands.CommandResult = (function () {
         };
     })
 });
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     commandSecurityService: doLittle.Singleton(function (commandSecurityContextFactory) {
         var self = this;
 
@@ -4765,7 +4766,7 @@ doLittle.commands.CommandResult = (function () {
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.commandSecurityService = doLittle.commands.commandSecurityService;
-﻿ko.extenders.hasChanges = function (target) {
+ko.extenders.hasChanges = function (target) {
     target._initialValueSet = false;
     target.hasChanges = ko.observable(false);
     function updateHasChanges() {
@@ -4797,13 +4798,13 @@ doLittle.WellKnownTypesDependencyResolver.types.commandSecurityService = doLittl
         updateHasChanges();
     };
 };
-﻿doLittle.namespace("doLittle.commands", {
+doLittle.namespace("doLittle.commands", {
     commandEvents: doLittle.Singleton(function () {
         this.succeeded = doLittle.Event.create();
         this.failed = doLittle.Event.create();
     })
 });
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     Operation: doLittle.Type.extend(function (region, context) {
         /// <summary>Defines an operation that be performed</summary>
         var self = this;
@@ -4863,13 +4864,13 @@ doLittle.WellKnownTypesDependencyResolver.types.commandSecurityService = doLittl
         };
     })
 });
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     OperationContext: doLittle.Type.extend(function () {
         /// <summary>Defines the context in which an operation is being performed or undoed within</summary>
 
     })
 });
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     OperationEntry: doLittle.Type.extend(function (operation, state) {
         /// <summary>Represents an entry for an operation in a specific context with resulting state</summary>
 
@@ -4880,7 +4881,7 @@ doLittle.WellKnownTypesDependencyResolver.types.commandSecurityService = doLittl
         this.state = state;
     })
 });
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     operationEntryFactory: doLittle.Singleton(function () {
         /// <summary>Represents a factory that can create OperationEntries</summary>
 
@@ -4899,7 +4900,7 @@ doLittle.WellKnownTypesDependencyResolver.types.commandSecurityService = doLittl
         };
     })
 });
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     Operations: doLittle.Type.extend(function (operationEntryFactory) {
         /// <summary>Represents a stack of operations and the ability to perform and put operations on the stack</summary>
         var self = this;
@@ -4955,7 +4956,7 @@ doLittle.WellKnownTypesDependencyResolver.types.commandSecurityService = doLittl
         };
     })
 });
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     operationsFactory: doLittle.Singleton(function () {
         this.create = function () {
             var operations = doLittle.interaction.Operations.create();
@@ -4964,7 +4965,7 @@ doLittle.WellKnownTypesDependencyResolver.types.commandSecurityService = doLittl
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.operationsFactory = doLittle.interaction.operationsFactory;
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     CommandOperation: doLittle.interaction.Operation.extend(function (commandSecurityService) {
         /// <summary>Represents an operation that result in a command</summary>
         var self = this;
@@ -5000,13 +5001,13 @@ doLittle.WellKnownTypesDependencyResolver.types.operationsFactory = doLittle.int
         };
     })
 });
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     Action: doLittle.Type.extend(function () {
         this.perform = function () {
         };
     })
 });
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     Trigger: doLittle.Type.extend(function () {
         var self = this;
 
@@ -5026,7 +5027,7 @@ doLittle.WellKnownTypesDependencyResolver.types.operationsFactory = doLittle.int
         };
     })
 });
-﻿doLittle.namespace("doLittle.interaction", {
+doLittle.namespace("doLittle.interaction", {
     EventTrigger: doLittle.interaction.Trigger.extend(function () {
         var self = this;
 
@@ -5271,12 +5272,12 @@ doLittle.namespace("doLittle.interaction.visualStateActions", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.mapping", {
+doLittle.namespace("doLittle.mapping", {
     MissingPropertyStrategy: doLittle.Type.extend(function () {
 
     })
 });
-﻿doLittle.namespace("doLittle.mapping", {
+doLittle.namespace("doLittle.mapping", {
     PropertyMap: doLittle.Type.extend(function (sourceProperty, typeConverters) {
         var self = this;
 
@@ -5325,7 +5326,7 @@ doLittle.namespace("doLittle.interaction.visualStateActions", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.mapping", {
+doLittle.namespace("doLittle.mapping", {
     Map: doLittle.Type.extend(function () {
         var self = this;
 
@@ -5359,7 +5360,7 @@ doLittle.namespace("doLittle.interaction.visualStateActions", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.mapping", {
+doLittle.namespace("doLittle.mapping", {
     maps: doLittle.Singleton(function () {
         var self = this;
         var maps = {};
@@ -5521,18 +5522,18 @@ doLittle.namespace("doLittle.mapping", {
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.mapper = doLittle.mapping.mapper;
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     readModelSystemEvents: doLittle.Singleton(function () {
         this.noInstance = doLittle.Event.create();
     })
 });
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     PagingInfo: doLittle.Type.extend(function (size, number) {
         this.size = size;
         this.number = number;
     })
 });
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     Queryable: doLittle.Type.extend(function (query, queryService, region, targetObservable) {
         var self = this;
 
@@ -5628,7 +5629,7 @@ doLittle.read.Queryable.new = function (options, region) {
     observable.isQueryable = true;
     return observable;
 };
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     queryableFactory: doLittle.Singleton(function () {
         this.create = function (query, region) {
             var queryable = doLittle.read.Queryable.new({
@@ -5639,7 +5640,7 @@ doLittle.read.Queryable.new = function (options, region) {
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.queryableFactory = doLittle.interaction.queryableFactory;
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     Query: doLittle.Type.extend(function (queryableFactory, region) {
         var self = this;
         this.target = this;
@@ -5735,7 +5736,7 @@ doLittle.WellKnownTypesDependencyResolver.types.queryableFactory = doLittle.inte
         };
     })
 });
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     ReadModel: doLittle.Type.extend(function () {
         var self = this;
         var actualReadModel = this;
@@ -5830,7 +5831,7 @@ doLittle.namespace("doLittle.read", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     ReadModelTask: doLittle.tasks.LoadTask.extend(function (readModelOf, propertyFilters, taskFactory) {
         var url = "/doLittle/ReadModel/InstanceMatching?_rm=" + readModelOf._generatedFrom;
         var payload = {
@@ -5851,7 +5852,7 @@ doLittle.namespace("doLittle.read", {
         };
     })
 });
-﻿doLittle.dependencyResolvers.readModelOf = {
+doLittle.dependencyResolvers.readModelOf = {
     canResolve: function (namespace, name) {
         if (typeof read !== "undefined") {
             return name in read;
@@ -5863,7 +5864,7 @@ doLittle.namespace("doLittle.read", {
         return read[name].create();
     }
 };
-﻿doLittle.dependencyResolvers.query = {
+doLittle.dependencyResolvers.query = {
     canResolve: function (namespace, name) {
         if (typeof read !== "undefined") {
             return name in read;
@@ -5875,7 +5876,7 @@ doLittle.namespace("doLittle.read", {
         return read[name].create();
     }
 };
-﻿doLittle.namespace("doLittle.read", {
+doLittle.namespace("doLittle.read", {
     QueryTask: doLittle.tasks.LoadTask.extend(function (query, paging, taskFactory) {
         var url = "/doLittle/Query/Execute?_q=" + query._generatedFrom;
         var payload = {
@@ -6043,7 +6044,7 @@ doLittle.namespace("doLittle.messaging", {
 doLittle.messaging.Messenger.global = doLittle.messaging.Messenger.create();
 doLittle.WellKnownTypesDependencyResolver.types.globalMessenger = doLittle.messaging.Messenger.global;
 
-﻿doLittle.namespace("doLittle.messaging", {
+doLittle.namespace("doLittle.messaging", {
     messengerFactory: doLittle.Singleton(function () {
         this.create = function () {
             var messenger = doLittle.messaging.Messenger.create();
@@ -6056,7 +6057,7 @@ doLittle.WellKnownTypesDependencyResolver.types.globalMessenger = doLittle.messa
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.messengerFactory = doLittle.messaging.messengerFactory;
-﻿if (typeof ko !== 'undefined') {
+if (typeof ko !== 'undefined') {
     ko.observableMessage = function (message, defaultValue) {
         var observable = ko.observable(defaultValue);
 
@@ -6076,7 +6077,7 @@ doLittle.WellKnownTypesDependencyResolver.types.messengerFactory = doLittle.mess
         return observable;
     };
 }
-﻿doLittle.namespace("doLittle.services", {
+doLittle.namespace("doLittle.services", {
     Service: doLittle.Type.extend(function () {
         var self = this;
 
@@ -6143,7 +6144,7 @@ doLittle.WellKnownTypesDependencyResolver.types.messengerFactory = doLittle.mess
         };
     })
 });
-﻿doLittle.dependencyResolvers.service = {
+doLittle.dependencyResolvers.service = {
     canResolve: function (namespace, name) {
         if (typeof services !== "undefined") {
             return name in services;
@@ -6155,7 +6156,7 @@ doLittle.WellKnownTypesDependencyResolver.types.messengerFactory = doLittle.mess
         return services[name].create();
     }
 };
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     documentService: doLittle.Singleton(function (DOMRoot) {
         var self = this;
 
@@ -6379,7 +6380,7 @@ doLittle.WellKnownTypesDependencyResolver.types.messengerFactory = doLittle.mess
         };
     })
 });
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     BindingContext: doLittle.Type.extend(function () {
         this.parent = null;
         this.current = null;
@@ -6387,7 +6388,7 @@ doLittle.WellKnownTypesDependencyResolver.types.messengerFactory = doLittle.mess
         this.changed = doLittle.Event.create();
     })
 });
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     bindingContextManager: doLittle.Singleton(function () {
 
         this.ensure = function (element) {
@@ -6414,14 +6415,14 @@ doLittle.WellKnownTypesDependencyResolver.types.messengerFactory = doLittle.mess
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.bindingContextManager = doLittle.markup.bindingContextManager;
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     attributeValues: doLittle.Singleton(function (valueProviderParser) {
         this.expandFor = function (element) {
 
         };
     })
 });
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     valueProviderParser: doLittle.Singleton(function (valueProviders, valueConsumers, typeConverters) {
         var self = this;
         var regex = new RegExp("{{([a-z ,:{{}}}]*)}}", "g");
@@ -6552,22 +6553,22 @@ doLittle.namespace("doLittle.markup", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     MultipleNamespacesInNameNotAllowed: doLittle.Type.extend(function (tagName) {
         //"Syntax error: tagname '" + name + "' has multiple namespaces";
     })
 });
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     MultiplePropertyReferencesNotAllowed: doLittle.Type.extend(function(tagName) {
         // "Syntax error: tagname '"+name+"' has multiple properties its referring to";
     })
 }); 
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     ParentTagNameMismatched: doLittle.Type.extend(function (tagName, parentTagName) {
         // "Setting property using tag '"+name+"' does not match parent tag of '"+parentName+"'";
     })
 });
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     NamespaceDefinition: doLittle.Type.extend(function (prefix) {
         var self = this;
         this.prefix = prefix;
@@ -6579,7 +6580,7 @@ doLittle.namespace("doLittle.markup", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     namespaceDefinitions: doLittle.Singleton(function () {
 
         this.create = function (prefix) {
@@ -6590,7 +6591,7 @@ doLittle.namespace("doLittle.markup", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     namespaces: doLittle.Singleton(function (namespaceDefinitions, elementNaming) {
         var self = this;
         var ns = "ns:";
@@ -6657,7 +6658,7 @@ doLittle.namespace("doLittle.markup", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     elementNaming: doLittle.Singleton(function () {
 
         function getNameAndNamespace(element) {
@@ -6694,7 +6695,7 @@ doLittle.namespace("doLittle.markup", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     propertyExpander: doLittle.Singleton(function (valueProviderParser) {
         this.expand = function (element, target) {
             for (var attributeIndex = 0; attributeIndex < element.attributes.length; attributeIndex++) {
@@ -6855,7 +6856,7 @@ doLittle.namespace("doLittle.markup", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.markup", {
+doLittle.namespace("doLittle.markup", {
     UIElementPreparer: doLittle.Singleton(function () {
         this.prepare = function (element, instance) {
             var result = instance.prepare(instance._type, element);
@@ -6950,14 +6951,14 @@ doLittle.namespace("doLittle.views", {
 
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     ComposeTask: doLittle.tasks.Task.extend(function () {
         /// <summary>Represents a base task that represents anything that is executing</summary>
         this.execute = function () {
         };
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     viewManager: doLittle.Singleton(function (viewFactory, pathResolvers, regionManager, UIManager, viewModelManager, viewModelLoader, viewModelTypes, documentService) {
         var self = this;
 
@@ -7028,7 +7029,7 @@ doLittle.namespace("doLittle.views", {
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.viewManager = doLittle.views.viewManager;
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     PathResolver: doLittle.Type.extend(function () {
         this.canResolve = function (element, path) {
             return false;
@@ -7039,7 +7040,7 @@ doLittle.WellKnownTypesDependencyResolver.types.viewManager = doLittle.views.vie
         };
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     pathResolvers: doLittle.Singleton(function () {
 
         function getResolvers() {
@@ -7085,7 +7086,7 @@ doLittle.WellKnownTypesDependencyResolver.types.viewManager = doLittle.views.vie
         };
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     UriMapperPathResolver: doLittle.views.PathResolver.extend(function () {
         this.canResolve = function (element, path) {
             var closest = $(element).closest("[data-urimapper]");
@@ -7113,7 +7114,7 @@ doLittle.WellKnownTypesDependencyResolver.types.viewManager = doLittle.views.vie
 if (typeof doLittle.views.pathResolvers !== "undefined") {
     doLittle.views.pathResolvers.UriMapperPathResolver = doLittle.views.UriMapperPathResolver;
 }
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     RelativePathResolver: doLittle.views.PathResolver.extend(function () {
         this.canResolve = function (element, path) {
             var closest = $(element).closest("[data-view]");
@@ -7164,7 +7165,7 @@ doLittle.namespace("doLittle.views", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     viewFactory: doLittle.Singleton(function () {
         this.createFrom = function (path) {
             var view = doLittle.views.View.create({
@@ -7175,7 +7176,7 @@ doLittle.namespace("doLittle.views", {
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.viewFactory = doLittle.views.viewFactory;
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     ViewLoadTask: doLittle.views.ComposeTask.extend(function (files, fileManager) {
         /// <summary>Represents a task for loading files asynchronously</summary>
 
@@ -7197,7 +7198,7 @@ doLittle.WellKnownTypesDependencyResolver.types.viewFactory = doLittle.views.vie
         };
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     viewLoader: doLittle.Singleton(function (viewModelManager, taskFactory, fileFactory, regionManager) {
         this.load = function (path,region) {
             var promise = doLittle.execution.Promise.create();
@@ -7289,7 +7290,7 @@ doLittle.views.viewBindingHandler.initialize = function () {
     ko.jsonExpressionRewriting.bindingRewriteValidators.view = false; // Can't rewrite control flow bindings
     ko.virtualElements.allowedBindings.view = true;
 };
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     ViewBindingHandlerTemplateSource: doLittle.Type.extend(function (viewFactory) {
         var content = "";
 
@@ -7324,7 +7325,7 @@ doLittle.views.viewBindingHandler.initialize = function () {
         };
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     ViewBindingHandlerTemplateEngine: doLittle.Type.extend(function (viewModelManager, regionManager, UIManager) {
         var self = this;
         this.renderTemplate = function (template, bindingContext, options) {
@@ -7402,7 +7403,7 @@ doLittle.views.viewBindingHandler.initialize = function () {
     };
 })();
 
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     MasterViewModel: doLittle.Type.extend(function (documentService) {
         var self = this;
 
@@ -7462,7 +7463,7 @@ doLittle.views.viewBindingHandler.initialize = function () {
         };
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     ViewModel: doLittle.Type.extend(function (region) {
         var self = this;
         this.targetViewModel = this;
@@ -7485,7 +7486,7 @@ doLittle.views.viewBindingHandler.initialize = function () {
         };
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     viewModelTypes: doLittle.Singleton(function () {
         var self = this;
 
@@ -7571,7 +7572,7 @@ doLittle.views.viewBindingHandler.initialize = function () {
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.viewModelTypes = doLittle.views.viewModelTypes;
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     viewModelLoader: doLittle.Singleton(function (taskFactory, fileFactory, viewModelTypes) {
         this.load = function (path, region, viewModelParameters) {
             var promise = doLittle.execution.Promise.create();
@@ -7587,7 +7588,7 @@ doLittle.WellKnownTypesDependencyResolver.types.viewModelTypes = doLittle.views.
     })
 });
 
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     ViewModelLoadTask: doLittle.views.ComposeTask.extend(function (files, fileManager) {
         /// <summary>Represents a task for loading viewModels</summary>
         var self = this;
@@ -7607,7 +7608,7 @@ doLittle.WellKnownTypesDependencyResolver.types.viewModelTypes = doLittle.views.
         };
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     viewModelManager: doLittle.Singleton(function(assetsManager, documentService, viewModelLoader, regionManager, taskFactory, viewFactory, MasterViewModel) {
         var self = this;
         this.assetsManager = assetsManager;
@@ -7711,7 +7712,7 @@ doLittle.views.viewModelBindingHandler.initialize = function () {
 };
 
 
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     Region: function(messengerFactory, operationsFactory, tasksFactory) {
         /// <summary>Represents a region in the visual composition on a page</summary>
         var self = this;
@@ -7903,7 +7904,7 @@ doLittle.views.viewModelBindingHandler.initialize = function () {
     }
 });
 doLittle.views.Region.current = null;
-﻿doLittle.dependencyResolvers.Region = {
+doLittle.dependencyResolvers.Region = {
     canResolve: function (namespace, name) {
         return name === "region";
     },
@@ -7912,7 +7913,7 @@ doLittle.views.Region.current = null;
         return doLittle.views.Region.current;
     }
 };
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     regionManager: doLittle.Singleton(function (documentService, regionDescriptorManager, messengerFactory, operationsFactory, tasksFactory) {
         /// <summary>Represents a manager that knows how to deal with Regions on the page</summary>
         var self = this;
@@ -7996,13 +7997,13 @@ doLittle.views.Region.current = null;
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.regionManager = doLittle.views.regionManage;
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     RegionDescriptor: doLittle.Type.extend(function () {
         this.describe = function (region) {
         };
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     regionDescriptorManager: doLittle.Singleton(function () {
         /// <summary>Represents a manager that knows how to manage region descriptors</summary>
 
@@ -8034,7 +8035,7 @@ doLittle.WellKnownTypesDependencyResolver.types.regionManager = doLittle.views.r
         };
     })
 });
-﻿doLittle.dependencyResolvers.RegionDescriptor = {
+doLittle.dependencyResolvers.RegionDescriptor = {
     canResolve: function (namespace, name) {
         return name === "RegionDescriptor";
     },
@@ -8045,7 +8046,7 @@ doLittle.WellKnownTypesDependencyResolver.types.regionManager = doLittle.views.r
         };
     }
 };
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     DataViewAttributeElementVisitor: doLittle.markup.ElementVisitor.extend(function () {
         this.visit = function (element, actions) {
 
@@ -8065,7 +8066,7 @@ doLittle.WellKnownTypesDependencyResolver.types.regionManager = doLittle.views.r
         };
     })
 });
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     DataViewModelFileAttributeElementVisitor: doLittle.markup.ElementVisitor.extend(function () {
         this.visit = function (element, actions) {
 
@@ -8166,7 +8167,7 @@ doLittle.namespace("doLittle.interaction", {
 
     })
 });
-﻿doLittle.namespace("doLittle.navigation", {
+doLittle.namespace("doLittle.navigation", {
     NavigationFrame: doLittle.Type.extend(function (home, uriMapper, history) {
         var self = this;
 
@@ -8306,7 +8307,7 @@ doLittle.namespace("doLittle.navigation", {
         }
     }
 });
-﻿doLittle.namespace("doLittle.navigation", {
+doLittle.namespace("doLittle.navigation", {
     observableQueryParameterFactory: doLittle.Singleton(function () {
         var self = this;
 
@@ -8396,7 +8397,7 @@ ko.observableQueryParameter = function (parameterName, defaultValue) {
     return observable;
 };
 
-﻿doLittle.namespace("doLittle.navigation", {
+doLittle.namespace("doLittle.navigation", {
     DataNavigationFrameAttributeElementVisitor: doLittle.markup.ElementVisitor.extend(function (documentService) {
         this.visit = function (element, actions) {
             var dataNavigationFrame = element.attributes.getNamedItem("data-navigation-frame");
@@ -8417,7 +8418,7 @@ ko.observableQueryParameter = function (parameterName, defaultValue) {
     })
 });
 
-﻿doLittle.namespace("doLittle.navigation", {
+doLittle.namespace("doLittle.navigation", {
     navigationBindingHandler: doLittle.Type.extend(function () {
         function getNavigationFrameFor(valueAccessor) {
             var configurationString = ko.utils.unwrapObservable(valueAccessor());
@@ -8481,7 +8482,7 @@ doLittle.namespace("doLittle.values", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     NumberTypeConverter: doLittle.values.TypeConverter.extend(function () {
         var allowedCharacters = "0123456789.,";
 
@@ -8523,7 +8524,7 @@ doLittle.namespace("doLittle.values", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     DateTypeConverter: doLittle.values.TypeConverter.extend(function () {
         this.supportedType = Date;
 
@@ -8552,7 +8553,7 @@ doLittle.namespace("doLittle.values", {
         };
     })
 });
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     StringTypeConverter: doLittle.values.TypeConverter.extend(function () {
         this.supportedType = String;
 
@@ -8602,7 +8603,7 @@ doLittle.namespace("doLittle.values", {
 });
 doLittle.WellKnownTypesDependencyResolver.types.typeConverters = doLittle.values.typeConverters;
 
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     typeExtender: doLittle.Singleton(function () {
         this.extend = function (target, typeAsString) {
             target._typeAsString = typeAsString;
@@ -8611,7 +8612,7 @@ doLittle.WellKnownTypesDependencyResolver.types.typeConverters = doLittle.values
 });
 ko.extenders.type = doLittle.values.typeExtender.create().extend;
 
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     Formatter: doLittle.Type.extend(function () {
         this.supportedType = null;
 
@@ -8620,7 +8621,7 @@ ko.extenders.type = doLittle.values.typeExtender.create().extend;
         };
     })
 });
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     DateFormatter: doLittle.values.Formatter.extend(function () {
         this.supportedType = Date;
 
@@ -8629,7 +8630,7 @@ ko.extenders.type = doLittle.values.typeExtender.create().extend;
         };
     })
 });
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     stringFormatter: doLittle.Singleton(function () {
         var formatterTypes = doLittle.values.Formatter.getExtenders();
         var formattersByType = {};
@@ -8673,7 +8674,7 @@ ko.extenders.type = doLittle.values.typeExtender.create().extend;
         };
     })
 });
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     valuePipeline: doLittle.Singleton(function (typeConverters, stringFormatter) {
         this.getValueForView = function (element, value) {
             if (doLittle.isNullOrUndefined(value)) {
@@ -8749,7 +8750,7 @@ ko.extenders.type = doLittle.values.typeExtender.create().extend;
         oldSetHtml(element, result);
     };
 })();
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     ValueProvider: doLittle.Type.extend(function () {
 
         this.defaultProperty = null;
@@ -8759,7 +8760,7 @@ ko.extenders.type = doLittle.values.typeExtender.create().extend;
         };
     })
 });
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     valueProviders: doLittle.Singleton(function () {
 
         this.isKnown = function (name) {
@@ -8789,7 +8790,7 @@ ko.extenders.type = doLittle.values.typeExtender.create().extend;
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.valueProviders = doLittle.values.valueProviders;
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     ValueConsumer: doLittle.Type.extend(function () {
 
         this.canNotifyChanges = function () {
@@ -8803,7 +8804,7 @@ doLittle.WellKnownTypesDependencyResolver.types.valueProviders = doLittle.values
         };
     })
 });
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     valueConsumers: doLittle.Singleton(function () {
 
         this.getFor = function (instance, propertyName) {
@@ -8817,7 +8818,7 @@ doLittle.WellKnownTypesDependencyResolver.types.valueProviders = doLittle.values
     })
 });
 doLittle.WellKnownTypesDependencyResolver.types.valueConsumers = doLittle.values.valueConsumers;
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     Binding: doLittle.values.ValueProvider.extend(function (bindingContextManager) {
 
         this.defaultProperty = "path";
@@ -8832,20 +8833,20 @@ doLittle.WellKnownTypesDependencyResolver.types.valueConsumers = doLittle.values
         };
     })
 });
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     DefaultValueConsumer: doLittle.values.ValueConsumer.extend(function (target, property) {
         this.consume = function(value) {
             target[property] = value;
         };
     })
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     configurator: doLittle.Type.extend(function () {
         this.configure = function (configure) {
         };
     })
 });
-﻿doLittle.namespace("doLittle",{
+doLittle.namespace("doLittle",{
     configureType: doLittle.Singleton(function(assetsManager) {
         var self = this;
 

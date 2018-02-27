@@ -1,4 +1,4 @@
-﻿describe("when converting from an integer string", function () {
+describe("when converting from an integer string", function () {
 
     var converter = doLittle.values.NumberTypeConverter.create();
 

@@ -1,4 +1,4 @@
-﻿describe("when instance changes and command is linked", function () {
+describe("when instance changes and command is linked", function () {
     var readModelOf = doLittle.read.ReadModelOf.create({
         mapper: {},
         region: {},

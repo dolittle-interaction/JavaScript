@@ -1,4 +1,4 @@
-﻿describe("when resolving a string that should match a string with expansion", function () {
+describe("when resolving a string that should match a string with expansion", function () {
     var expectedResult = "/Features/Layout/Top";
     var input = "Layout/Top";
 

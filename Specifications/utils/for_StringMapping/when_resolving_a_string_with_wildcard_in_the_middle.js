@@ -1,4 +1,4 @@
-﻿describe("when resolving a string with wildcard in the middle", function () {
+describe("when resolving a string with wildcard in the middle", function () {
     var expectedResult = "this.is.a.wildcard.string.for_things";
     var mapping = doLittle.StringMapping.create({
         format: "{something}/**/for_{else}",

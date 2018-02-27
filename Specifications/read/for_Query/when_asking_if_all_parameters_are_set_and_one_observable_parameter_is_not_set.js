@@ -1,4 +1,4 @@
-﻿describe("when asking if all parameters are set and one observable parameter is not set", function () {
+describe("when asking if all parameters are set and one observable parameter is not set", function () {
 
     var queryType = doLittle.read.Query.extend(function () {
         var self = this;

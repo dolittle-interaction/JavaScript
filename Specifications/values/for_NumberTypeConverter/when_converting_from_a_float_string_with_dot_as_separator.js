@@ -1,4 +1,4 @@
-﻿describe("when converting from a float string with dot as separator", function () {
+describe("when converting from a float string with dot as separator", function () {
 
     var converter = doLittle.values.NumberTypeConverter.create();
 

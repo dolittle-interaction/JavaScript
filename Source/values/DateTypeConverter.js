@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.values", {
+doLittle.namespace("doLittle.values", {
     DateTypeConverter: doLittle.values.TypeConverter.extend(function () {
         this.supportedType = Date;
 

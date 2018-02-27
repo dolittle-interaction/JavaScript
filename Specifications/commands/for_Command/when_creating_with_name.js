@@ -1,4 +1,4 @@
-﻿describe("when creating with name", function () {
+describe("when creating with name", function () {
     var parameters = {
         commandCoordinator: {
         },

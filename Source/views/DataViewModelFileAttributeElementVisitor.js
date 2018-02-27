@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle.views", {
+doLittle.namespace("doLittle.views", {
     DataViewModelFileAttributeElementVisitor: doLittle.markup.ElementVisitor.extend(function () {
         this.visit = function (element, actions) {
 

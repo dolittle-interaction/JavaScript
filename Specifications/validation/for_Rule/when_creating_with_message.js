@@ -1,4 +1,4 @@
-﻿describe("when creating with message", function () {
+describe("when creating with message", function () {
     var errorMessage = "This is just wrong";
     var rule = doLittle.validation.Rule.create({ options: { message: errorMessage } });
 

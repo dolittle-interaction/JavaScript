@@ -1,4 +1,4 @@
-﻿doLittle.namespace("doLittle", {
+doLittle.namespace("doLittle", {
     server: doLittle.Singleton(function () {
         var self = this;
 
