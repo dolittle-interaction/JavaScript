@@ -56,7 +56,7 @@ doLittle.commands.CommandRequest = function(command) {
 
     var properties = getPropertiesFromCommand(command);
     var commandContent = ko.toJS(properties);
-    this.content = ko.toJSON(commandContent);
+    this.content = commandContent;
 };
 
 

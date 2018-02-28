@@ -37,17 +37,11 @@ doLittle.namespace("doLittle", {
                 url = self.target + url;
             }
 
-            var actualParameters = {};
-
-            for (var property in parameters) {
-                actualParameters[property] = JSON.stringify(parameters[property]);
-            }
-
             $.ajax({
                 url: url,
                 type: "POST",
                 dataType: 'json',
-                data: JSON.stringify(actualParameters),
+                data: JSON.stringify(parameters),
                 contentType: 'application/json; charset=utf-8',
                 complete: function (result) {
                     var data = $.parseJSON(result.responseText);
