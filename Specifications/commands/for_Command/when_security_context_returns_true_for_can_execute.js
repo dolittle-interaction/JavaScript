@@ -27,7 +27,7 @@ describe("when security context returns true for can execute", function () {
         mapper: {}
     }
 
-    var command = doLittle.commands.Command.create(parameters);
+    var command = Dolittle.commands.Command.create(parameters);
 
     it("should result in the command returning true for can execute", function () {
         expect(command.canExecute()).toBe(true);

@@ -22,7 +22,7 @@ describe("when first command gets change and second has not", function () {
         }
     };
 
-    var region = new doLittle.views.Region(
+    var region = new Dolittle.views.Region(
         messengerFactory,
         operationsFactory,
         tasksFactory

@@ -8,13 +8,13 @@ describe("when creating with known rule", function () {
             _name: "knownRule",
             create: sinon.mock().withArgs({ options: options }).once()
         };
-        doLittle.validation.Rule = {
+        Dolittle.validation.Rule = {
             getExtenders: function () {
                 return [knownRule];
             }
         }
 
-        validator = doLittle.validation.Validator.create({
+        validator = Dolittle.validation.Validator.create({
             knownRule: options
         });
     });

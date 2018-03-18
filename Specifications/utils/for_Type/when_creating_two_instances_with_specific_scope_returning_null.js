@@ -3,11 +3,11 @@ describe("when creating two instances with specific scope returning null", funct
     var firstInstance = null;
     var secondInstance = null;
     beforeEach(function () {
-        doLittle.dependencyResolver = {
+        Dolittle.dependencyResolver = {
             getDependenciesFor: sinon.stub()
         };
 
-        type = doLittle.Type.extend(function () {
+        type = Dolittle.Type.extend(function () {
         }).scopeTo({
             getFor: function () {
                 return null;
@@ -18,7 +18,7 @@ describe("when creating two instances with specific scope returning null", funct
     });
 
     afterEach(function () {
-        doLittle.dependencyResolver = {};
+        Dolittle.dependencyResolver = {};
     });
 
     it("should return different instances", function () {

@@ -32,7 +32,7 @@ describe("when creating from an observable extended command with properties and 
         mapper: {}
     }
 
-    var commandType = doLittle.commands.Command.extend(function () {
+    var commandType = Dolittle.commands.Command.extend(function () {
         this.integer = 0;
         this.number = 0.1;
         this.string = "";

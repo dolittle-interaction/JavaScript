@@ -1,5 +1,5 @@
-doLittle.namespace("doLittle.commands", {
-    commandSecurityService: doLittle.Singleton(function (commandSecurityContextFactory) {
+Dolittle.namespace("Dolittle.commands", {
+    commandSecurityService: Dolittle.Singleton(function (commandSecurityContextFactory) {
         var self = this;
 
         this.commandSecurityContextFactory = commandSecurityContextFactory;
@@ -15,8 +15,8 @@ doLittle.namespace("doLittle.commands", {
 
         function hasSecurityContextInNamespaceFor(type, namespace) {
             var securityContextName = getSecurityContextNameFor(type);
-            return !doLittle.isNullOrUndefined(securityContextName) &&
-                !doLittle.isNullOrUndefined(namespace) &&
+            return !Dolittle.isNullOrUndefined(securityContextName) &&
+                !Dolittle.isNullOrUndefined(namespace) &&
                 namespace.hasOwnProperty(securityContextName);
         }
 
@@ -26,7 +26,7 @@ doLittle.namespace("doLittle.commands", {
         }
 
         this.getContextFor = function (command) {
-            var promise = doLittle.execution.Promise.create();
+            var promise = Dolittle.execution.Promise.create();
             var context;
 
             var type = getTypeNameFor(command);
@@ -36,7 +36,7 @@ doLittle.namespace("doLittle.commands", {
                 promise.signal(context);
             } else {
                 context = self.commandSecurityContextFactory.create();
-                if (doLittle.isNullOrUndefined(command._generatedFrom) || command._generatedFrom === "") {
+                if (Dolittle.isNullOrUndefined(command._generatedFrom) || command._generatedFrom === "") {
                     promise.signal(context);
                 } else {
                     var url = "/api/Dolittle/CommandSecurity?commandName=" + command._generatedFrom;
@@ -51,7 +51,7 @@ doLittle.namespace("doLittle.commands", {
         };
 
         this.getContextForType = function (commandType) {
-            var promise = doLittle.execution.Promise.create();
+            var promise = Dolittle.execution.Promise.create();
             var context;
 
             if (hasSecurityContextInNamespaceFor(commandType._name, commandType._namespace)) {
@@ -59,7 +59,7 @@ doLittle.namespace("doLittle.commands", {
                 context = contextType.create();
                 promise.signal(context);
             } else {
-                context = doLittle.commands.CommandSecurityContext.create();
+                context = Dolittle.commands.CommandSecurityContext.create();
                 context.isAuthorized(true);
                 promise.signal(context);
             }
@@ -68,4 +68,4 @@ doLittle.namespace("doLittle.commands", {
         };
     })
 });
-doLittle.WellKnownTypesDependencyResolver.types.commandSecurityService = doLittle.commands.commandSecurityService;
+Dolittle.WellKnownTypesDependencyResolver.types.commandSecurityService = Dolittle.commands.commandSecurityService;

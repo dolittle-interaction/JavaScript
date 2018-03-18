@@ -6,7 +6,7 @@ describe("when signalling with one action", function () {
         perform: sinon.stub()
     };
 
-    var trigger = doLittle.interaction.Trigger.create();
+    var trigger = Dolittle.interaction.Trigger.create();
     trigger.addAction(firstAction);
     trigger.addAction(secondAction);
 

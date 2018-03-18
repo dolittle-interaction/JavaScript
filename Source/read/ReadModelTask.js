@@ -1,5 +1,5 @@
-doLittle.namespace("doLittle.read", {
-    ReadModelTask: doLittle.tasks.LoadTask.extend(function (readModelOf, propertyFilters, taskFactory) {
+Dolittle.namespace("Dolittle.read", {
+    ReadModelTask: Dolittle.tasks.LoadTask.extend(function (readModelOf, propertyFilters, taskFactory) {
         var url = "/api/Dolittle/ReadModel?_rm=" + readModelOf._generatedFrom;
         var payload = {
             descriptor: {

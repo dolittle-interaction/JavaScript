@@ -7,7 +7,7 @@ describe("when getting by identifier", function () {
     };
 
 
-    var operations = doLittle.interaction.Operations.create({
+    var operations = Dolittle.interaction.Operations.create({
         operationEntryFactory: {}
     });
     operations.all.push(firstOperation);

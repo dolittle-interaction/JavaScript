@@ -22,7 +22,7 @@ describe("when command is valid", function () {
         }
     };
 
-    var region = new doLittle.views.Region(
+    var region = new Dolittle.views.Region(
         messengerFactory,
         operationsFactory,
         tasksFactory

@@ -1,6 +1,6 @@
 describe("when reporting error", function () {
 
-    var task = doLittle.tasks.Task.create();
+    var task = Dolittle.tasks.Task.create();
     task.reportError("something");
 
     it("should have one error", function () {

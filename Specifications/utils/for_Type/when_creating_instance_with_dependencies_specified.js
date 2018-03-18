@@ -3,13 +3,13 @@ describe("when creating instance with dependencies specified", function () {
     var instance = null;
 
     beforeEach(function () {
-        doLittle.dependencyResolver = {
+        Dolittle.dependencyResolver = {
             getDependenciesFor: function () {
                 return ["something"];
             }
         };
 
-        var myType = doLittle.Type.extend(function (something) {
+        var myType = Dolittle.Type.extend(function (something) {
             this.something = something;
         });
 

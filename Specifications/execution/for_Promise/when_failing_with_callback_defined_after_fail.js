@@ -2,7 +2,7 @@ describe("when failing with callback defined ", function () {
     var error = null;
     var errorCalledWith = null;
 
-    var promise = doLittle.execution.Promise.create();
+    var promise = Dolittle.execution.Promise.create();
     promise.onFail(function (e) {
         errorCalledWith = e;
     });

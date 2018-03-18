@@ -1,5 +1,5 @@
-doLittle.namespace("doLittle.commands", {
-    HandleCommandsTask: doLittle.tasks.ExecutionTask.extend(function (commands, server) {
+Dolittle.namespace("Dolittle.commands", {
+    HandleCommandsTask: Dolittle.tasks.ExecutionTask.extend(function (commands, server) {
         /// <summary>Represents a task that can handle an array of command</summary>
         var self = this;
 
@@ -9,13 +9,13 @@ doLittle.namespace("doLittle.commands", {
         });
 
         this.execute = function () {
-            var promise = doLittle.execution.Promise.create();
+            var promise = Dolittle.execution.Promise.create();
 
             var commandRequests = [];
 
             commands.forEach(function (command) {
                 command.isBusy(true);
-                var commandRequest= doLittle.commands.CommandRequest.createFrom(command);
+                var commandRequest= Dolittle.commands.CommandRequest.createFrom(command);
                 commandRequests.push(commandRequest);
             });
 
@@ -29,7 +29,7 @@ doLittle.namespace("doLittle.commands", {
                 var commandResults = [];
 
                 results.forEach(function (result) {
-                    var commandResult = doLittle.commands.CommandResult.createFrom(result);
+                    var commandResult = Dolittle.commands.CommandResult.createFrom(result);
                     commandResults.push(commandResult);
                 });
                 promise.signal(commandResults);

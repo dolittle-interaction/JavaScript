@@ -27,7 +27,7 @@ describe("when one value is reporting change", function () {
         }
     }
 
-    var commandType = doLittle.commands.Command.extend(function () {
+    var commandType = Dolittle.commands.Command.extend(function () {
         this.someValue = ko.observable(43);
         this.someArray = ko.observableArray();
     });

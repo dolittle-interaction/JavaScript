@@ -34,7 +34,7 @@ describe("when applying validation results to properties", function () {
         memberNames: [""]
     }];
 
-    var commandValidationService = doLittle.commands.commandValidationService.create(parameters);
+    var commandValidationService = Dolittle.commands.commandValidationService.create(parameters);
     commandValidationService.applyValidationResultToProperties(command, validationResults);
 
     it("should invalidate the top level property", function () {

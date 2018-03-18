@@ -6,13 +6,13 @@ describe("when asking if it can resolve for comamndTypes", sinon.test(function (
         namespace;
 
     beforeEach(function () {
-        doLittle.commands = sinon.stub().returns({ Command: function () { } });
-        doLittle.read = sinon.stub().returns({
+        Dolittle.commands = sinon.stub().returns({ Command: function () { } });
+        Dolittle.read = sinon.stub().returns({
             ReadModelOf: function () { },
             Query: function () { }
         });
 
-        resolver = new doLittle.KnownArtifactTypesDependencyResolver();
+        resolver = new Dolittle.KnownArtifactTypesDependencyResolver();
         canResolve = false;
         propertyToResolve = "commandTypes";
         namespace = {};

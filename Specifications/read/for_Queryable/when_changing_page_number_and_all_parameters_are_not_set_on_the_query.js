@@ -18,9 +18,9 @@ describe("when changing page number and all parameters are set on the query", fu
     var region = {};
 
     beforeEach(function () {
-        pagingInfoType = doLittle.read.PagingInfo;
+        pagingInfoType = Dolittle.read.PagingInfo;
 
-        doLittle.read.PagingInfo = {
+        Dolittle.read.PagingInfo = {
             create: function () {
                 return paging;
             }
@@ -30,7 +30,7 @@ describe("when changing page number and all parameters are set on the query", fu
             execute: sinon.mock().withArgs(query, paging).never()
         };
 
-        var instance = doLittle.read.Queryable.create({
+        var instance = Dolittle.read.Queryable.create({
             query: query,
             region: region,
             queryService: queryService,
@@ -41,7 +41,7 @@ describe("when changing page number and all parameters are set on the query", fu
     });
 
     afterEach(function () {
-        doLittle.read.PagingInfo = pagingInfoType;
+        Dolittle.read.PagingInfo = pagingInfoType;
     });
 
 

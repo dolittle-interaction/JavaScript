@@ -1,5 +1,5 @@
-doLittle.namespace("doLittle.read", {
-    QueryTask: doLittle.tasks.LoadTask.extend(function (query, paging, taskFactory) {
+Dolittle.namespace("Dolittle.read", {
+    QueryTask: Dolittle.tasks.LoadTask.extend(function (query, paging, taskFactory) {
         var url = "/api/Dolittle/Queries?_q=" + query._generatedFrom;
         var payload = {
             descriptor: {

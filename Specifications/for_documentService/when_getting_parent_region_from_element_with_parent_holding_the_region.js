@@ -1,5 +1,5 @@
 describe("when getting parent region from element with parent holding the region", function () {
-    var service = doLittle.documentService.createWithoutScope({
+    var service = Dolittle.documentService.createWithoutScope({
         DOMRoot: {}
     });
 

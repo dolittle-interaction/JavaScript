@@ -19,9 +19,9 @@ describe("when property on query changes but other properties are not set", func
     var region = {};
 
     beforeEach(function () {
-        pagingInfoType = doLittle.read.PagingInfo;
+        pagingInfoType = Dolittle.read.PagingInfo;
 
-        doLittle.read.PagingInfo = {
+        Dolittle.read.PagingInfo = {
             create: function () {
                 return paging;
             }
@@ -31,7 +31,7 @@ describe("when property on query changes but other properties are not set", func
             execute: sinon.mock().withArgs(query, paging).never()
         };
 
-        var instance = doLittle.read.Queryable.create({
+        var instance = Dolittle.read.Queryable.create({
             query: query,
             region: region,
             queryService: queryService,
@@ -42,7 +42,7 @@ describe("when property on query changes but other properties are not set", func
     });
 
     afterEach(function () {
-        doLittle.read.PagingInfo = pagingInfoType;
+        Dolittle.read.PagingInfo = pagingInfoType;
     });
     
 

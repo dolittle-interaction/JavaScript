@@ -33,7 +33,7 @@ describe("when getting context for a command", sinon.test(function () {
             _namespace: {}
         }
     };
-    var service = doLittle.commands.commandSecurityService.create(parameters);
+    var service = Dolittle.commands.commandSecurityService.create(parameters);
     service.getContextFor(command).continueWith(function (context) {
         securityContextReceived = context;
     });

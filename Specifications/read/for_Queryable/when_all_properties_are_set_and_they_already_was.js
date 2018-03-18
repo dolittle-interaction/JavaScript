@@ -15,15 +15,15 @@ describe("when all properties are set and they already was", function () {
     };
 
     beforeEach(function () {
-        pagingInfoType = doLittle.read.PagingInfo;
+        pagingInfoType = Dolittle.read.PagingInfo;
 
-        doLittle.read.PagingInfo = {
+        Dolittle.read.PagingInfo = {
             create: function () {
                 return paging;
             }
         };
 
-        doLittle.read.Queryable.create({
+        Dolittle.read.Queryable.create({
             query: query,
             region: region,
             queryService: queryService,
@@ -33,7 +33,7 @@ describe("when all properties are set and they already was", function () {
     });
 
     afterEach(function () {
-        doLittle.read.PagingInfo = pagingInfoType;
+        Dolittle.read.PagingInfo = pagingInfoType;
     });
     
     it("should not execute the query on the query service", function () {

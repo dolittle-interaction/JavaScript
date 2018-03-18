@@ -1,6 +1,6 @@
 describe("when creating with values", function () {
 
-    var instance = doLittle.read.PagingInfo.create({
+    var instance = Dolittle.read.PagingInfo.create({
         size: 42,
         number: 43
     });

@@ -3,18 +3,18 @@ describe("when creating two instances with default scope", function () {
     var firstInstance = null;
     var secondInstance = null;
     beforeEach(function () {
-        doLittle.dependencyResolver = {
+        Dolittle.dependencyResolver = {
             getDependenciesFor: sinon.stub()
         };
 
-        type = doLittle.Type.extend(function () {
+        type = Dolittle.Type.extend(function () {
         });
         firstInstance = type.create();
         secondInstance = type.create();
     });
 
     afterEach(function () {
-        doLittle.dependencyResolver = {};
+        Dolittle.dependencyResolver = {};
     });
 
     it("should return different instances", function () {

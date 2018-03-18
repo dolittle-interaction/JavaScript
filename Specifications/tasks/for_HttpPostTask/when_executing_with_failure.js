@@ -19,7 +19,7 @@ describe("when executing with failure", function () {
 
     var error = null;
     
-    var task = doLittle.tasks.HttpPostTask.create({
+    var task = Dolittle.tasks.HttpPostTask.create({
         url: url,
         payload: payload,
         server: server

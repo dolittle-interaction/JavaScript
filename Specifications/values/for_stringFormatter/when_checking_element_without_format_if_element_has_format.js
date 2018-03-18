@@ -11,19 +11,19 @@ describe("when checking element without format if element has format", function 
             }
         }
 
-        formatterBefore = doLittle.values.Formatter;
-        doLittle.values.Formatter = {
+        formatterBefore = Dolittle.values.Formatter;
+        Dolittle.values.Formatter = {
             getExtenders: sinon.stub().returns([])
         };
 
-        formatter = doLittle.values.stringFormatter.createWithoutScope();
+        formatter = Dolittle.values.stringFormatter.createWithoutScope();
         result = formatter.hasFormat(element);
 
 
     });
 
     afterEach(function () {
-        doLittle.values.Formatter = formatterBefore;
+        Dolittle.values.Formatter = formatterBefore;
     });
 
     

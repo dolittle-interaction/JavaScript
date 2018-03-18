@@ -21,7 +21,7 @@ describe("when executing task that successfully finishes", function () {
         end: sinon.mock().withArgs(taskHistoryId, result)
     };
 
-    var tasks = doLittle.tasks.Tasks.create({ taskHistory: taskHistory });
+    var tasks = Dolittle.tasks.Tasks.create({ taskHistory: taskHistory });
 
     var isBusyTimeline = [];
     var taskWasAdded = false;

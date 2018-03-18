@@ -22,7 +22,7 @@ describe("when region gets an executing task that gets completed", function () {
         }
     };
 
-    var region = new doLittle.views.Region(
+    var region = new Dolittle.views.Region(
         messengerFactory,
         operationsFactory,
         tasksFactory

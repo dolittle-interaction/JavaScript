@@ -21,7 +21,7 @@ describe("when command in child region can not execute and then can", function (
         }
     };
 
-    var region = new doLittle.views.Region(
+    var region = new Dolittle.views.Region(
         messengerFactory,
         operationsFactory,
         tasksFactory
@@ -32,7 +32,7 @@ describe("when command in child region can not execute and then can", function (
     });
 
 
-    var childRegion = new doLittle.views.Region(
+    var childRegion = new Dolittle.views.Region(
         messengerFactory,
         operationsFactory,
         tasksFactory

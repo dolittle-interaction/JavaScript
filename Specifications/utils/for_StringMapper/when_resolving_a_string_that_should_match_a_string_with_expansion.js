@@ -23,7 +23,7 @@ describe("when resolving a string that should match a string with expansion", fu
         }
     }
 
-    var mapper = doLittle.StringMapper.create({
+    var mapper = Dolittle.StringMapper.create({
         stringMappingFactory : stringMappingFactory
     });
     mapper.addMapping("Home", "/Features/Home");

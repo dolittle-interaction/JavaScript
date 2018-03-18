@@ -4,7 +4,7 @@ describe("when namespace contains system for resolving", function () {
 
 
     beforeEach(function () {
-        var resolver = new doLittle.DefaultDependencyResolver();
+        var resolver = new Dolittle.DefaultDependencyResolver();
         var ns = {
             something: "Hello"
         }

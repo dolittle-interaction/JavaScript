@@ -31,7 +31,7 @@ describe("when executing with two items coming back", function() {
 
     var mapper = {};
 
-    var instance = doLittle.read.queryService.createWithoutScope({
+    var instance = Dolittle.read.queryService.createWithoutScope({
         mapper: mapper,
         taskFactory: taskFactory
     });

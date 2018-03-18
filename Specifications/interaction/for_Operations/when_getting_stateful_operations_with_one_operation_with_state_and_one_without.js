@@ -33,7 +33,7 @@ describe("when getting stateful operations with one operation with state and one
         }
     };
 
-    var operations = doLittle.interaction.Operations.create({
+    var operations = Dolittle.interaction.Operations.create({
         operationEntryFactory: operationEntryFactory
     });
 

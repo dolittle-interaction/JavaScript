@@ -5,7 +5,7 @@ describe("when creating", function () {
     var queryableFactory = {
     };
 
-    var query = doLittle.read.Query.create({
+    var query = Dolittle.read.Query.create({
         queryableFactory: queryableFactory,
         region: region
     });

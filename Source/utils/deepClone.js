@@ -1,4 +1,4 @@
-doLittle.namespace("doLittle",{
+Dolittle.namespace("Dolittle",{
     deepClone: function (source, target) {
         function isReservedMemberName(member) {
             return member.indexOf("_") >= 0 || member === "model" || member === "commons" || member === "targetViewModel" || member === "region";
@@ -9,7 +9,7 @@ doLittle.namespace("doLittle",{
         }
 
         if (target == null) {
-            if (doLittle.isArray(source)) {
+            if (Dolittle.isArray(source)) {
                 target = [];
             } else {
                 target = {};
@@ -17,10 +17,10 @@ doLittle.namespace("doLittle",{
         }
 
         var sourceValue;
-        if (doLittle.isArray(source)) {
+        if (Dolittle.isArray(source)) {
             for (var index = 0; index < source.length; index++) {
                 sourceValue = source[index];
-                var clonedValue = doLittle.deepClone(sourceValue);
+                var clonedValue = Dolittle.deepClone(sourceValue);
                 target.push(clonedValue);
             }
         } else {
@@ -35,14 +35,14 @@ doLittle.namespace("doLittle",{
                     sourceValue = sourceValue();
                 }
 
-                if (doLittle.isFunction(sourceValue)) {
+                if (Dolittle.isFunction(sourceValue)) {
                     continue;
                 }
 
                 var targetValue = null;
-                if (doLittle.isObject(sourceValue)) {
+                if (Dolittle.isObject(sourceValue)) {
                     targetValue = {};
-                } else if (doLittle.isArray(sourceValue)) {
+                } else if (Dolittle.isArray(sourceValue)) {
                     targetValue = [];
                 } else {
                     target[member] = sourceValue;
@@ -50,7 +50,7 @@ doLittle.namespace("doLittle",{
 
                 if (targetValue != null) {
                     target[member] = targetValue;
-                    doLittle.deepClone(sourceValue, targetValue);
+                    Dolittle.deepClone(sourceValue, targetValue);
                 }
             }
         }

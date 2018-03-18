@@ -22,7 +22,7 @@ describe("when child region gets changes and changed back", function () {
         }
     };
 
-    var region = new doLittle.views.Region(
+    var region = new Dolittle.views.Region(
         messengerFactory,
         operationsFactory,
         tasksFactory

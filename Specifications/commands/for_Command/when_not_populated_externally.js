@@ -26,7 +26,7 @@ describe("when not populated externally", function () {
         },
         mapper: {}
     }
-    var command = doLittle.commands.Command.create(parameters);
+    var command = Dolittle.commands.Command.create(parameters);
 
     it("should indicate that it is not populated externally", function() {
         expect(command.isPopulatedExternally()).toBe(false);

@@ -20,7 +20,7 @@ describe("when setting container and no mapping for url", function () {
         }
     };
 
-    var frame = doLittle.navigation.NavigationFrame.create({
+    var frame = Dolittle.navigation.NavigationFrame.create({
         uriMapper: uriMapper,
         home: home,
         history: history

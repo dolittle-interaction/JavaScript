@@ -1,7 +1,7 @@
 describe("when creating a list of parameters", function () {
     var command = {
         _name: "DoSomething",
-        id: doLittle.Guid.create(),
+        id: Dolittle.Guid.create(),
         plainObject: {
             plainString: "test",
             koString: ko.observable("test"),
@@ -17,7 +17,7 @@ describe("when creating a list of parameters", function () {
             })
         })
     };
-    var commandDescriptor = doLittle.commands.CommandDescriptor.createFrom(command);
+    var commandDescriptor = Dolittle.commands.CommandDescriptor.createFrom(command);
 
     
     it("should include the plainObject.plainString", function () {

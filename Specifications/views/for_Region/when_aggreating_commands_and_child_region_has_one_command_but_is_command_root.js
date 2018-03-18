@@ -22,7 +22,7 @@ describe("when aggreating commands and child region has one command but is comma
         }
     };
 
-    var region = new doLittle.views.Region(
+    var region = new Dolittle.views.Region(
         messengerFactory,
         operationsFactory,
         tasksFactory

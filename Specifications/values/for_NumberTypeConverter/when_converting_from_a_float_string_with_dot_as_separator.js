@@ -1,6 +1,6 @@
 describe("when converting from a float string with dot as separator", function () {
 
-    var converter = doLittle.values.NumberTypeConverter.create();
+    var converter = Dolittle.values.NumberTypeConverter.create();
 
     var result = converter.convertFrom("42.43");
 

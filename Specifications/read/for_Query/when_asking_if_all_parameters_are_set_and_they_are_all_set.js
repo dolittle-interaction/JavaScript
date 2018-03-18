@@ -1,6 +1,6 @@
 describe("when asking if all parameters are set and they are all set", function () {
 
-    var queryType = doLittle.read.Query.extend(function () {
+    var queryType = Dolittle.read.Query.extend(function () {
         var self = this;
 
         this.firstParameter = ko.observable(1);

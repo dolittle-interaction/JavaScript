@@ -9,7 +9,7 @@ describe("when getting value for view with non writeable observable", function (
         format: sinon.stub().returns(formattedValue)
     };
 
-    var pipeline = doLittle.values.valuePipeline.createWithoutScope({
+    var pipeline = Dolittle.values.valuePipeline.createWithoutScope({
         typeConverters: typeConverters,
         stringFormatter: stringFormatter
     });

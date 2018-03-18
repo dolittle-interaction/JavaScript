@@ -43,7 +43,7 @@ describe("when executing without success", function () {
         },
         mapper: {}
     }
-    var command = doLittle.commands.Command.create(parameters);
+    var command = Dolittle.commands.Command.create(parameters);
     command.execute();
 
     var commandResult = {

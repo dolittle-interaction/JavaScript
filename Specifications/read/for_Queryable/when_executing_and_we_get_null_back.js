@@ -11,8 +11,8 @@ describe("when executing and we get null back", function () {
         var pagingInfoType = null;
 
         beforeEach(function () {
-            pagingInfoType = doLittle.read.PagingInfo;
-            doLittle.read.PagingInfo = {
+            pagingInfoType = Dolittle.read.PagingInfo;
+            Dolittle.read.PagingInfo = {
                 create: function () {
                     return {};
                 }
@@ -28,7 +28,7 @@ describe("when executing and we get null back", function () {
                 }
             };
 
-            var queryable = doLittle.read.Queryable.create({
+            var queryable = Dolittle.read.Queryable.create({
                 query: query,
                 region: region,
                 queryService: queryService,
@@ -40,7 +40,7 @@ describe("when executing and we get null back", function () {
         });
 
         afterEach(function () {
-            doLittle.read.PagingInfo = pagingInfoType;
+            Dolittle.read.PagingInfo = pagingInfoType;
         });
 
 

@@ -20,7 +20,7 @@ describe("when creating without name", function () {
         },
         mapper: {}
     }
-    var command = doLittle.commands.Command.create(parameters);
+    var command = Dolittle.commands.Command.create(parameters);
 
     it("should not get validation rules", function () {
         expect(parameters.commandValidationService.applyRulesTo.called).toBe(false);

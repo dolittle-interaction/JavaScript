@@ -19,7 +19,7 @@ describe("when validating", function () {
     command.deep.property.validator = new validator();
 
 
-    var commandValidationService = doLittle.commands.commandValidationService.create();
+    var commandValidationService = Dolittle.commands.commandValidationService.create();
     var result = commandValidationService.validate(command);
 
     it("should return a result", function () {

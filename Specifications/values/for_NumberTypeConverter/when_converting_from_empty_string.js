@@ -1,6 +1,6 @@
 describe("when converting from empty string", function () {
 
-    var converter = doLittle.values.NumberTypeConverter.create();
+    var converter = Dolittle.values.NumberTypeConverter.create();
 
     var result = converter.convertFrom("");
 

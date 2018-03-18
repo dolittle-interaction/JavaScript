@@ -10,7 +10,7 @@ describe("when posting data to a url that returns an array of elements", sinon.t
         xhr.respond(200, { "Content-Type":"application/json" }, '[{"somethingElse":"43"},{"someStuff":"d44"}]');
     });
 
-    var server = doLittle.server.create();
+    var server = Dolittle.server.create();
     var promise = server.post(url, data);
     promise.continueWith(function (result) {
         response = result;

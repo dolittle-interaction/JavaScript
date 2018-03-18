@@ -15,11 +15,11 @@ describe("when creating instance with specific scope", function () {
     };
 
     beforeEach(function () {
-        doLittle.dependencyResolver = {
+        Dolittle.dependencyResolver = {
             getDependenciesFor: sinon.stub()
         };
 
-        type = doLittle.Type.extend(function () {
+        type = Dolittle.Type.extend(function () {
             this.something = "hello";
         }).scopeTo(scope);
 
@@ -30,7 +30,7 @@ describe("when creating instance with specific scope", function () {
     });
 
     afterEach(function () {
-        doLittle.dependencyResolver = {};
+        Dolittle.dependencyResolver = {};
     });
 
     it("should create a proper instance", function () {

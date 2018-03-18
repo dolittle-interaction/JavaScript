@@ -4,7 +4,7 @@ describe("when performing and operation can not perform", function () {
         perform: sinon.stub()
     };
 
-    var operations = doLittle.interaction.Operations.create({
+    var operations = Dolittle.interaction.Operations.create({
         operationEntryFactory: {}
     });
 

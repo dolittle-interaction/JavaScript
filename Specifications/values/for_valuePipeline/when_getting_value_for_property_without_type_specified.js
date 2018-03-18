@@ -7,7 +7,7 @@ describe("when getting value for property without type specified", function () {
         hasFormat: sinon.stub().returns(false)
     };
 
-    var pipeline = doLittle.values.valuePipeline.createWithoutScope({
+    var pipeline = Dolittle.values.valuePipeline.createWithoutScope({
         typeConverters: typeConverters,
         stringFormatter: stringFormatter
     });

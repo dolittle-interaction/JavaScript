@@ -47,19 +47,19 @@ describe("when getting for an element without region and parent not having regio
     var tasksFactory = { tasks: "factory" };
 
     beforeEach(function () {
-        regionType = doLittle.views.Region;
-        doLittle.views.Region = function (messengerFactory, operationsFactory, tasksFactory) {
+        regionType = Dolittle.views.Region;
+        Dolittle.views.Region = function (messengerFactory, operationsFactory, tasksFactory) {
             this.messengerFactory = messengerFactory;
             this.operationsFactory = operationsFactory;
             this.tasksFactory = tasksFactory;
             this.view = ko.observable();
         };
-        namespaceMappersType = doLittle.namespaceMappers;
-        doLittle.namespaceMappers = {
+        namespaceMappersType = Dolittle.namespaceMappers;
+        Dolittle.namespaceMappers = {
             mapPathToNamespace: function () { return null; }
         };
 
-        var instance = doLittle.views.regionManager.createWithoutScope({
+        var instance = Dolittle.views.regionManager.createWithoutScope({
             documentService: documentService,
             regionDescriptorManager: regionDescriptorManager,
             messengerFactory: messengerFactory,
@@ -71,7 +71,7 @@ describe("when getting for an element without region and parent not having regio
     });
     
     afterEach(function () {
-        doLittle.views.Region = regionType;
+        Dolittle.views.Region = regionType;
     });
 
     it("should set region on the element", function () {

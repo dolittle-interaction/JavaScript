@@ -6,7 +6,7 @@ describe("when getting value from observable for view twice without value having
         hasFormat: sinon.stub().returns(false)
     };
 
-    var pipeline = doLittle.values.valuePipeline.createWithoutScope({
+    var pipeline = Dolittle.values.valuePipeline.createWithoutScope({
         typeConverters: typeConverters,
         stringFormatter: stringFormatter
     });

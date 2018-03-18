@@ -43,7 +43,7 @@ describe("when executing with success and valid", function () {
         },
         mapper: {}
     }
-    var command = doLittle.commands.Command.create(parameters);
+    var command = Dolittle.commands.Command.create(parameters);
 
     command.execute();
 

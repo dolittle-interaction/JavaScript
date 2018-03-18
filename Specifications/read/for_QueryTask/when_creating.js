@@ -26,7 +26,7 @@ describe("when creating", function () {
         }
     };
 
-    var task = doLittle.read.QueryTask.create({
+    var task = Dolittle.read.QueryTask.create({
         taskFactory: taskFactory,
         query: query,
         paging: paging

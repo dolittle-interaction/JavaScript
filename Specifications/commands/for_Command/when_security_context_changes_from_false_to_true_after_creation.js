@@ -29,7 +29,7 @@ describe("when security context changes from false to true", function () {
         mapper: {}
     }
 
-    var command = doLittle.commands.Command.create(parameters);
+    var command = Dolittle.commands.Command.create(parameters);
     securityContext.isAuthorized(true);
 
     it("should result in the command returning true for can execute", function () {

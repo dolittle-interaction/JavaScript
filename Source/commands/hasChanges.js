@@ -5,7 +5,7 @@ ko.extenders.hasChanges = function (target) {
         if (target._initialValueSet === false) {
             target.hasChanges(false);
         } else {
-            if (doLittle.isArray(target._initialValue)) {
+            if (Dolittle.isArray(target._initialValue)) {
                 target.hasChanges(!target._initialValue.shallowEquals(target()));
                 return;
             }
@@ -19,7 +19,7 @@ ko.extenders.hasChanges = function (target) {
 
     target.setInitialValue = function (value) {
         var initialValue;
-        if (doLittle.isArray(value)) {
+        if (Dolittle.isArray(value)) {
             initialValue = value.clone();
         } else {
             initialValue = value;

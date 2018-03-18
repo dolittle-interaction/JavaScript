@@ -2,7 +2,7 @@ describe("when creating with parameters", function () {
     var format = "Something";
     var mappedFormat = "SomethingElse";
 
-    var mapping = doLittle.StringMapping.create({
+    var mapping = Dolittle.StringMapping.create({
         format: format,
         mappedFormat: mappedFormat
     });

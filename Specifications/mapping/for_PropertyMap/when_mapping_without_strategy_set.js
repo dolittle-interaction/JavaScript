@@ -1,5 +1,5 @@
 describe("when mapping without strategy set", function () {
-    var propertyMap = doLittle.mapping.PropertyMap.create({
+    var propertyMap = Dolittle.mapping.PropertyMap.create({
         sourceProperty: "Source",
         typeConverters: {}
     });
@@ -8,8 +8,8 @@ describe("when mapping without strategy set", function () {
     var exception = null;
 
     beforeEach(function () {
-        missingPropertyStrategy = doLittle.mapping.MissingPropertyStrategy;
-        doLittle.mapping.MissingPropertyStrategy = doLittle.Type.extend(function () { });
+        missingPropertyStrategy = Dolittle.mapping.MissingPropertyStrategy;
+        Dolittle.mapping.MissingPropertyStrategy = Dolittle.Type.extend(function () { });
 
         
         try {
@@ -21,10 +21,10 @@ describe("when mapping without strategy set", function () {
     });
 
     afterEach(function () {
-        doLittle.mapping.MissingPropertyStrategy = missingPropertyStrategy;
+        Dolittle.mapping.MissingPropertyStrategy = missingPropertyStrategy;
     });
 
     it("should throw missing property strategy", function () {
-        expect(exception._type).toBe(doLittle.mapping.MissingPropertyStrategy);
+        expect(exception._type).toBe(Dolittle.mapping.MissingPropertyStrategy);
     });
 });

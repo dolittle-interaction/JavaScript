@@ -9,7 +9,7 @@ describe("when getting value twice for view with type specified", function () {
         format: sinon.stub().returns(formattedValue)
     };
 
-    var pipeline = doLittle.values.valuePipeline.createWithoutScope({
+    var pipeline = Dolittle.values.valuePipeline.createWithoutScope({
         typeConverters: typeConverters,
         stringFormatter: stringFormatter
     });

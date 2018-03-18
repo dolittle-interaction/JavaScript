@@ -25,7 +25,7 @@ describe("when populated externally with property values set", function () {
         }
     }
 
-    var commandType = doLittle.commands.Command.extend(function () {
+    var commandType = Dolittle.commands.Command.extend(function () {
         this.someValue = ko.observable(42);
         this.someArray = ko.observableArray();
     });

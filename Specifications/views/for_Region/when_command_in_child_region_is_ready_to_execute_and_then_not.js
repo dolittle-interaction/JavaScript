@@ -22,7 +22,7 @@ describe("when command in child region is ready to execute and then not", functi
         }
     };
 
-    var region = new doLittle.views.Region(
+    var region = new Dolittle.views.Region(
         messengerFactory,
         operationsFactory,
         tasksFactory
@@ -32,7 +32,7 @@ describe("when command in child region is ready to execute and then not", functi
         isReadyToExecute = newValue;
     });
 
-    var childRegion = new doLittle.views.Region(
+    var childRegion = new Dolittle.views.Region(
         messengerFactory,
         operationsFactory,
         tasksFactory

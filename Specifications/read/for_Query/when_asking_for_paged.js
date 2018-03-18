@@ -3,7 +3,7 @@ describe("when asking for paged", function () {
     var queryableFactory = {};
     var region = { some: "region" };
 
-    var query = doLittle.read.Query.create({
+    var query = Dolittle.read.Query.create({
         queryableFactory: queryableFactory,
         region: region
     });

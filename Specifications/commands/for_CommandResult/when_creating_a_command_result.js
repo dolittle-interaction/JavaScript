@@ -7,7 +7,7 @@ describe("when creating a command result", function () {
     });
 
     it("should extend with existsing js object", function () {
-		var commandResult = doLittle.commands.CommandResult.createFrom(jsObject);
+		var commandResult = Dolittle.commands.CommandResult.createFrom(jsObject);
         expect(commandResult.newProperty).toBeDefined();
     });
 });

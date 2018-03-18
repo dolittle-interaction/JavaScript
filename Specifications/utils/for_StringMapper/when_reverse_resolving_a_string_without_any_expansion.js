@@ -23,7 +23,7 @@ describe("when reverse resolving a string without any expansion", function () {
         }
     }
 
-    var mapper = doLittle.StringMapper.create({
+    var mapper = Dolittle.StringMapper.create({
         stringMappingFactory: stringMappingFactory
     });
     mapper.addMapping("Home", "/Features/Home");

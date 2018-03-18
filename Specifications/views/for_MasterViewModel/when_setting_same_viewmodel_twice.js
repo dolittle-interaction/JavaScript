@@ -17,7 +17,7 @@ describe("when setting same viewmodel twice", function () {
         getViewModelNameFor: sinon.stub().returns(viewModelName)
     };
 
-    var masterViewModel = doLittle.views.MasterViewModel.create({ documentService: documentService });
+    var masterViewModel = Dolittle.views.MasterViewModel.create({ documentService: documentService });
     masterViewModel.setFor(element, viewModel);
     masterViewModel.setFor(element, viewModel);
 

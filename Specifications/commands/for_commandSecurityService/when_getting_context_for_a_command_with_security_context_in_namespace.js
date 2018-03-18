@@ -25,7 +25,7 @@ describe("when getting context for a command with security context in namespace"
             }
         }
     };
-    var service = doLittle.commands.commandSecurityService.create(parameters);
+    var service = Dolittle.commands.commandSecurityService.create(parameters);
     service.getContextFor(command).continueWith(function (context) {
         securityContextReceived = context;
     });

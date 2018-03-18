@@ -20,7 +20,7 @@ describe("when reverse resolving an empty string", function () {
         }
     }
 
-    var mapper = doLittle.StringMapper.create({
+    var mapper = Dolittle.StringMapper.create({
         stringMappingFactory: stringMappingFactory
     });
     mapper.addMapping("{feature}", "/Features/{feature}");

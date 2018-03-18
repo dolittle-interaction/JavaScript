@@ -3,8 +3,8 @@ describe("when observing message and value changes on the observable", function 
     var messagePublished = null;
     var observable = null;
     beforeEach(function () {
-        doLittle.messaging = doLittle.messaging || {};
-        doLittle.messaging.Messenger = {
+        Dolittle.messaging = Dolittle.messaging || {};
+        Dolittle.messaging.Messenger = {
             global: {
                 publish: function (message, value) {
                     messagePublished = value;

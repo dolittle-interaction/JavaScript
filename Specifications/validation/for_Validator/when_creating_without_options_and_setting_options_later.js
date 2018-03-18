@@ -10,13 +10,13 @@ describe("when creating without options and setting options later", function () 
             create: sinon.mock().withArgs({ options: options }).once()
         };
 
-        doLittle.validation.Rule = {
+        Dolittle.validation.Rule = {
             getExtenders: function () {
                 return [knownRule];
             }
         }
 
-        validator = doLittle.validation.Validator.create();
+        validator = Dolittle.validation.Validator.create();
         validator.setOptions(rules);
     });
 

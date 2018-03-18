@@ -2,7 +2,7 @@ describe("when getting parameter values with parameters holding observables", fu
     var firstValue = ko.observable(42);
     var secondValue = ko.observable(43);
 
-    var queryType = doLittle.read.Query.extend(function () {
+    var queryType = Dolittle.read.Query.extend(function () {
         this.firstObservable = ko.observable(firstValue);
         this.secondObservable = ko.observable(secondValue);
         this.nonObservable = "";

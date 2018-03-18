@@ -20,7 +20,7 @@ describe("when setting container and url matches mapper", function () {
         }
     };
 
-    var frame = doLittle.navigation.NavigationFrame.create({
+    var frame = Dolittle.navigation.NavigationFrame.create({
         uriMapper: uriMapper,
         home: home,
         history: history

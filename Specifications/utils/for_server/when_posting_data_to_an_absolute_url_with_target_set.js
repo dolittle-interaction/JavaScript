@@ -3,7 +3,7 @@ describe("when posting data to an absolute url with target set", function () {
     var data = { something: 42 };
 
     var target = "http://www.vg.no";
-    var server = doLittle.server.create();
+    var server = Dolittle.server.create();
     server.target = target;
     
     beforeEach(function() {

@@ -22,7 +22,7 @@ describe("when_first_command_can_execute_and_second_can_not", function () {
         }
     };
 
-    var region = new doLittle.views.Region(
+    var region = new Dolittle.views.Region(
         messengerFactory,
         operationsFactory,
         tasksFactory

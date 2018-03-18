@@ -11,7 +11,7 @@ describe("when creating command of type with command created callback", function
 
     var context = {};
 
-    var instance = doLittle.interaction.CommandOperation.create({
+    var instance = Dolittle.interaction.CommandOperation.create({
         commandSecurityService: commandSecurityService,
         region: region,
         context: context

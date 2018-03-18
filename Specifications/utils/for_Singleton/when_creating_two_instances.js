@@ -3,11 +3,11 @@ describe("when creating two instances", function () {
     var firstInstance = null;
     var secondInstance = null;
     beforeEach(function () {
-        doLittle.dependencyResolver = {
+        Dolittle.dependencyResolver = {
             getDependenciesFor: sinon.stub()
         };
 
-        type = doLittle.Singleton(function () {
+        type = Dolittle.Singleton(function () {
             this.something = "When creating two instances";
         });
         firstInstance = type.create();
@@ -15,7 +15,7 @@ describe("when creating two instances", function () {
     });
 
     afterEach(function () {
-        doLittle.dependencyResolver = {};
+        Dolittle.dependencyResolver = {};
     });
 
     it("should return correct instance for the first", function () {

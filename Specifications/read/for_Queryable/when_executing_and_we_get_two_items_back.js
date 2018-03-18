@@ -17,8 +17,8 @@ describe("when executing and we get two items back", function () {
     var queryable = null;
 
     beforeEach(function () {
-        pagingInfoType = doLittle.read.PagingInfo;
-        doLittle.read.PagingInfo = {
+        pagingInfoType = Dolittle.read.PagingInfo;
+        Dolittle.read.PagingInfo = {
             create: function () {
                 return {};
             }
@@ -38,7 +38,7 @@ describe("when executing and we get two items back", function () {
             }
         };
 
-        queryable = doLittle.read.Queryable.create({
+        queryable = Dolittle.read.Queryable.create({
             query: query,
             region: region,
             queryService: queryService,
@@ -50,7 +50,7 @@ describe("when executing and we get two items back", function () {
     });
 
     afterEach(function () {
-        doLittle.read.PagingInfo = pagingInfoType;
+        Dolittle.read.PagingInfo = pagingInfoType;
     });
 
 
