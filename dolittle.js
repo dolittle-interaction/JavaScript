@@ -213,6 +213,7 @@ HTMLElement.prototype.knownElementTypes = [
     "sub",
     "summary",
     "sup",
+    "svg",
     "table",
     "tbody",
     "td",
